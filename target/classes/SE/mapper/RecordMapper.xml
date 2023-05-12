@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="SE.mapper.RecordMapper">
+    <select id="testRecord" resultType="SE.pojo.Record">
+        select * from records where record_id=1
+    </select>
+
+    <insert id="addRecord" useGeneratedKeys="true" keyProperty="record_id">
+        insert into records (room_num,booker_name,business_or_travel,email,is_traveller,
+        special_requirement,south,require_receipt,arrive_time,nation,city,address,postal_code,phone)
+        values(#{room_num},#{booker_name},#{business_or_travel},#{email},#{is_traveller},
+        #{special_requirement},#{south},#{require_receipt},#{arrive_time},#{nation},#{city},#{address},#{postal_code},#{phone})
+    </insert>
+    <insert id="addDetail">
+        insert into recorddetail (record_id,hotel_id,room_id,room_num,check_in_date,check_out_date) values(#{record_id},#{hotel_id},#{room_id},#{room_num},#{check_in_date},#{check_out_date})
+    </insert>
+</mapper>

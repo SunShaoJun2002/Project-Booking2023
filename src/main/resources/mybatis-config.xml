@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="SE.pojo"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///booking?useSSL=false&amp;useUnicode=true&amp;characterEnconding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="111111"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="SE/mapper/DescriptionMapper.xml"/>
+        <mapper resource="SE/mapper/FeatureMapper.xml"/>
+        <mapper resource="SE/mapper/InfoMapper.xml"/>
+        <mapper resource="SE/mapper/RecordMapper.xml"/>
+        <mapper resource="SE/mapper/RoomMapper.xml"/>
+    </mappers>
+</configuration>
