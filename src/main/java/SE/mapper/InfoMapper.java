@@ -20,4 +20,12 @@ public interface InfoMapper {
     );
 
     Integer countNum(@Param("Table")String table, @Param("Field")String field, @Param("Value")String value);
+    void reset();
+    void selectFacility(@Param("Facilities")String facilities);
+    void selectStarRating(@Param("Star")Integer Star);
+    void selectGoodLocation();
+    void selectBreakfast();
+    void selectRating(@Param("Rate")Integer rate);
+    int countOne();
+    List<Info> selectOne();
 }

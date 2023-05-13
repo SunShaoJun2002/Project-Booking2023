@@ -74,17 +74,20 @@
                 <when test="RoomDesc != null and RoomNum != null and StartDate != null and EndDate != null">
                     and id in <!-- 查找所有在（1）可用时间段内（2）房间类型等于所需的房间类型（3）空余房间数大于RoomNum的hotel_id集合 -->
                     (
-                    select A.hotel_id
-                    from<!-- A：不考虑时间条件满足的所有酒店以及房间数 -->
+                    (select A.hotel_id
+                    from
                     (select hotel_id, sum(room_num) as room_num from rooms where usable_desc=#{RoomDesc} group by hotel_id) A,
-                    <!-- B：时间有冲突且满足其他非时间条件的酒店以及房间数 -->
                     (select D.hotel_id, sum(D.room_num) as room_num from recorddetail as D where D.room_id in
                     (select room_id from rooms as F where F.hotel_id=D.hotel_id and F.usable_desc=#{RoomDesc})
                     and D.check_in_date&lt;=#{EndDate} and D.check_out_date>=#{StartDate} group by D.hotel_id) B
-                    where<!-- 如果某酒店存在时间冲突的房间，"总"-"冲突"应大于等于要订的房间数 -->
-                    (A.hotel_id=B.hotel_id and A.room_num-B.room_num>=#{RoomNum})
-                    or<!-- 如果不存在时间冲突的房间，"总"大于等于要订的房间数 -->
-                    (A.hotel_id not in
+                    where
+                    A.hotel_id=B.hotel_id and A.room_num-B.room_num>=#{RoomNum})
+                    union
+                    (select A.hotel_id
+                    from
+                    (select hotel_id, sum(room_num) as room_num from rooms where usable_desc=#{RoomDesc} group by hotel_id) A
+                    where
+                    A.hotel_id not in
                     (select distinct D.hotel_id from recorddetail as D where D.room_id in
                     (select room_id from rooms as F where F.hotel_id=D.hotel_id and F.usable_desc=#{RoomDesc}) and D.check_in_date&lt;=#{EndDate} and D.check_out_date>=#{StartDate})
                     and A.room_num>=#{RoomNum})
@@ -103,8 +106,8 @@
     </delete>
 
     <insert id="insertContentHotel">
-        insert into testdbconnection (id)
-        select id from info
+        insert into testdbconnection (hotel_id)
+        select id as hotel_id from info
         <where>
             <if test="Province != null">
                 province like #{Province}
@@ -113,17 +116,20 @@
                 <when test="RoomDesc != null and RoomNum != null and StartDate != null and EndDate != null">
                     and id in <!-- 查找所有在（1）可用时间段内（2）房间类型等于所需的房间类型（3）空余房间数大于RoomNum的hotel_id集合 -->
                     (
-                    select A.hotel_id
-                    from<!-- A：不考虑时间条件满足的所有酒店以及房间数 -->
+                    (select A.hotel_id
+                    from
                     (select hotel_id, sum(room_num) as room_num from rooms where usable_desc=#{RoomDesc} group by hotel_id) A,
-                    <!-- B：时间有冲突且满足其他非时间条件的酒店以及房间数 -->
                     (select D.hotel_id, sum(D.room_num) as room_num from recorddetail as D where D.room_id in
                     (select room_id from rooms as F where F.hotel_id=D.hotel_id and F.usable_desc=#{RoomDesc})
                     and D.check_in_date&lt;=#{EndDate} and D.check_out_date>=#{StartDate} group by D.hotel_id) B
-                    where<!-- 如果某酒店存在时间冲突的房间，"总"-"冲突"应大于等于要订的房间数 -->
-                    (A.hotel_id=B.hotel_id and A.room_num-B.room_num>=#{RoomNum})
-                    or<!-- 如果不存在时间冲突的房间，"总"大于等于要订的房间数 -->
-                    (A.hotel_id not in
+                    where
+                    A.hotel_id=B.hotel_id and A.room_num-B.room_num>=#{RoomNum})
+                    union
+                    (select A.hotel_id
+                    from
+                    (select hotel_id, sum(room_num) as room_num from rooms where usable_desc=#{RoomDesc} group by hotel_id) A
+                    where
+                    A.hotel_id not in
                     (select distinct D.hotel_id from recorddetail as D where D.room_id in
                     (select room_id from rooms as F where F.hotel_id=D.hotel_id and F.usable_desc=#{RoomDesc}) and D.check_in_date&lt;=#{EndDate} and D.check_out_date>=#{StartDate})
                     and A.room_num>=#{RoomNum})
@@ -138,7 +144,38 @@
     </insert>
 
     <select id="countNum" resultType="java.lang.Integer">
-        select count(id) from (select id from ${Table} where ${Field} like #{Value}) A
+        select count(id) from (select A.id from ${Table} as A, testdbconnection as B where ${Field} like #{Value} and A.id=B.hotel_id) C
+    </select>
+
+    <update id="reset">
+        update testdbconnection set `condition`=0
+    </update>
+
+    <update id="selectFacility">
+        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from feature where facility_list like #{Facilities})
+    </update>
+
+    <update id="selectStarRating">
+        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from info where star_rating=#{Star})
+    </update>
+
+    <update id="selectGoodLocation">
+        update testdbconnection set `condition`=1 where hotel_id not in (select id as hotel_id from feature where feature='NULL')
+    </update>
+
+    <update id="selectBreakfast">
+        update testdbconnection set `condition`=1 where hotel_id not in (select id as hotel_id from feature where breakfast='NULL')
+    </update>
+
+    <update id="selectRating">
+        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from info where rating>=#{Rate} and rating&lt;=#{Rate}+1)
+    </update>
+
+    <select id="countOne" resultType="java.lang.Integer">
+        select count(hotel_id) from testdbconnection where `condition`=1
+    </select>
+    <select id="selectOne" resultType="SE.pojo.Info">
+        select A.* from info as A, testdbconnection as B where B.`condition`=1 and A.id=B.hotel_id
     </select>
 
 </mapper>
