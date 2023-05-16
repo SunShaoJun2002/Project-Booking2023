@@ -7,14 +7,32 @@
     <select id="testRecord" resultType="SE.pojo.Record">
         select * from records where record_id=1
     </select>
+    <select id="selectRecordsByPhone" resultType="SE.pojo.Record">
+        select * from records where phone=#{Phone}
+    </select>
+    <select id="selectDetailById" resultType="SE.pojo.RecordDetail">
+        select * from recorddetail where record_id=#{Id}
+    </select>
 
     <insert id="addRecord" useGeneratedKeys="true" keyProperty="record_id">
-        insert into records (room_num,booker_name,business_or_travel,email,is_traveller,
-        special_requirement,south,require_receipt,arrive_time,nation,city,address,postal_code,phone)
-        values(#{room_num},#{booker_name},#{business_or_travel},#{email},#{is_traveller},
-        #{special_requirement},#{south},#{require_receipt},#{arrive_time},#{nation},#{city},#{address},#{postal_code},#{phone})
+        insert into records (room_num) values(#{room_num})
     </insert>
+
+    <update id="updateRecord">
+        update records set booker_name=#{booker_name},business_or_travel=#{business_or_travel},
+        email=#{email},is_traveller=#{is_traveller},special_requirement=#{special_requirement},
+        south=#{south},require_receipt=#{require_receipt},arrive_time=#{arrive_time},nation=#{nation},
+        city=#{city},address=#{address},postal_code=#{postal_code},phone=#{phone} where record_id=#{record_id}
+    </update>
+    <update id="updateRecordNum">
+        update records set room_num=#{room_num} where record_id=#{record_id}
+    </update>
+
     <insert id="addDetail">
         insert into recorddetail (record_id,hotel_id,room_id,room_num,check_in_date,check_out_date) values(#{record_id},#{hotel_id},#{room_id},#{room_num},#{check_in_date},#{check_out_date})
     </insert>
+
+    <select id="selectRecordDetailById" resultType="SE.pojo.RecordDetail">
+        select * from recorddetail where record_id=#{Id}
+    </select>
 </mapper>

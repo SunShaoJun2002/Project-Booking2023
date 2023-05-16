@@ -32,4 +32,10 @@ public class testRoom {
             System.out.println(rooms.get(i));
         }
     }
+    @Test
+    public void testIntegerToString()
+    {
+        Integer i = 10;
+        String str = i.toString();
+    }
 }

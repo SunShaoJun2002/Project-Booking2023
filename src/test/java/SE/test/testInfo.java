@@ -4,6 +4,7 @@ import SE.mapper.InfoMapper;
 import SE.mapper.RoomMapper;
 import SE.pojo.Info;
 import SE.pojo.Room;
+import SE.util.StringTools;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,6 +13,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 public class testInfo {
@@ -157,7 +159,7 @@ public class testInfo {
 
         InfoMapper infoMapper = sqlSession.getMapper(InfoMapper.class);
 
-        infoMapper.selectFacility(value);
+        infoMapper.selectFacility(value,null,null,null,null,null,null,null);
         sqlSession.commit();
     }
     @Test
@@ -170,7 +172,31 @@ public class testInfo {
 
         InfoMapper infoMapper = sqlSession.getMapper(InfoMapper.class);
 
-        infoMapper.selectStarRating(3);
+        String[] selectStarRating = {"0","0","1","1","0","1"};
+
+        List<Integer> starList = new ArrayList<>();
+        for (int i = 0; i != 6; ++i)
+        {
+            if (selectStarRating[i].equals("1"))
+            {
+                starList.add(i);
+            }
+        }
+        Integer[] starArr = new Integer[6];
+        for(int i = 0; i != 6; ++i)
+        {
+            if (i >= starList.size()) starArr[i] = null;
+            else starArr[i] = starList.get(i);
+        }
+        for(Integer i : starArr)
+        {
+            System.out.println("integer: " + i);
+        }
+        if (starArr[0] != null)
+        {
+            infoMapper.selectStarRating(starArr[0],starArr[1],starArr[2],starArr[3],starArr[4],starArr[5]);
+            sqlSession.commit();
+        }
         sqlSession.commit();
     }
     @Test
@@ -211,7 +237,7 @@ public class testInfo {
         InfoMapper infoMapper = sqlSession.getMapper(InfoMapper.class);
 
         infoMapper.reset();
-        infoMapper.selectRating(4);
+        infoMapper.selectRating(4,null,null,null);
         sqlSession.commit();
     }
     @Test
@@ -277,4 +303,10 @@ public class testInfo {
         }
     }
 
+    @Test
+    public void testPicNum(){
+        for(int i = 0; i != 10; ++i){
+            System.out.println(StringTools.getHotelNum(i));
+        }
+    }
 }

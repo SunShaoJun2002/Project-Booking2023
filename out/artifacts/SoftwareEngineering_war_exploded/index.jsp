@@ -6,116 +6,120 @@
 <html lang="zh-cn"
       class="noJS b_chrome b_chrome_111 supports_inline-block supports_flexbox_unprefixed supports_fontface ">
 <head>
+	 
     <meta name="referrer" content="origin-when-cross-origin">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
+	
     <link rel="stylesheet" id="main-css-preload"
-          href="https://ac-a.static.booking.cn/static/css/main_cn_alicloud_a.iq_ltr/7e25c448172fa2405f9aaf4a9ad33bb8786d3846.css"
+          href="./script/static/css/main_cn_alicloud_a.iq_ltr/7e25c448172fa2405f9aaf4a9ad33bb8786d3846.css"
           data-main-css="1"/>
     <link rel="stylesheet"
-          href="https://ac-a.static.booking.cn/static/css/main_exps_alicloud_a.iq_ltr/18d1b7c3e1d431578ff0c4342fe8ba6e5ca9aa58.css"/>
+          href="./script/static/css/main_exps_alicloud_a.iq_ltr/18d1b7c3e1d431578ff0c4342fe8ba6e5ca9aa58.css"/>
     <link rel="stylesheet"
-          href="https://ac-a.static.booking.cn/static/css/gprof_icons_alicloud_a.iq_ltr/f9a9959fb174be6a1a61e78d982a7444775f1419.css"/>
+          href="./script/static/css/gprof_icons_alicloud_a.iq_ltr/f9a9959fb174be6a1a61e78d982a7444775f1419.css"/>
     <link rel="stylesheet" type="text/css"
-          href="https://ac-a.static.booking.cn/static/css/xp-index-sb_alicloud_a.iq_ltr/7002203683ade23c789ef8ef41e69938504499e4.css"
+          href="./script/static/css/xp-index-sb_alicloud_a.iq_ltr/7002203683ade23c789ef8ef41e69938504499e4.css"
           media="screen, print"/>
     <link rel="_prefetch" data-defer-prefetch
-          href="https://ac-a.static.booking.cn/static/css/searchresults_alicloud_a.iq_ltr/0edeb3177467c0445e8ddfffc0573cef4849b34e.css">
+          href="./script/static/css/searchresults_alicloud_a.iq_ltr/0edeb3177467c0445e8ddfffc0573cef4849b34e.css">
     <link rel="stylesheet" type="text/css"
-          href="https://ac-a.static.booking.cn/static/css/incentives_alicloud_a.iq_ltr/33eadafb597edc0b651d3538d4ebdc6ca7741b68.css"
+          href="./script/static/css/incentives_alicloud_a.iq_ltr/33eadafb597edc0b651d3538d4ebdc6ca7741b68.css"
           media="screen"/>
     <link rel="stylesheet"
-          href="https://ac-a.static.booking.cn/static/css/index_alicloud_a.iq_ltr/24ae0b6bd8d77f2d9f0292f4ce6c6eef52ece38b.css"/>
+          href="./script/static/css/index_alicloud_a.iq_ltr/24ae0b6bd8d77f2d9f0292f4ce6c6eef52ece38b.css"/>
+    
     <style nonce="4DwZSPUvFd8eOkZ">
-         #basiclayout, .basiclayout { margin: 0; } #special_actions { margin: 3px 15px 3px 0; } .ticker_space { margin-top: 3px !important; } #logo_no_globe_new_logo { top: 14px; } .b_msie_6 #top, .b_msie_6 body.header_reshuffle #top {height:61px !important;} .b_msie_6 #special_actions { margin: 3px 15px 3px 0; overflow:visible; } body.header_reshuffle #top { min-height: 50px !important; height: auto !important; } .nobg { background: #fff url("https://ac-a.static.booking.cn/static/img/nobg_all_blue_iq/b700d9e3067c1186a3364012df4fe1c48ae6da44.png") repeat-x; background-position: 0 -50px; }
+         #basiclayout, .basiclayout { margin: 0; } #special_actions { margin: 3px 15px 3px 0; } .ticker_space { margin-top: 3px !important; } #logo_no_globe_new_logo { top: 14px; } .b_msie_6 #top, .b_msie_6 body.header_reshuffle #top {height:61px !important;} .b_msie_6 #special_actions { margin: 3px 15px 3px 0; overflow:visible; } body.header_reshuffle #top { min-height: 50px !important; height: auto !important; } .nobg { background: #fff url("./script/static/img/nobg_all_blue_iq/b700d9e3067c1186a3364012df4fe1c48ae6da44.png") repeat-x; background-position: 0 -50px; }
 
     </style>
+     
     <link rel="stylesheet"
-          href="https://ac-a.static.booking.cn/static/css/cjk/969f60bdd3700d13d4b9df8937fcc8745bbfa45b.css"/>
-   <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/core-deps-inlinedet_alicloud_a/6da0bf621035bb8a2f9c756d6a89dda03b2f7864.js"
+          href="./script/static/css/cjk/969f60bdd3700d13d4b9df8937fcc8745bbfa45b.css"/>
+   	<link rel="preload" as="script"
+          href="./script/static/js/core-deps-inlinedet_alicloud_a/6da0bf621035bb8a2f9c756d6a89dda03b2f7864.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/jquery_alicloud_a/e1e8c0e862309cb4caf3c0d5fbea48bfb8eaad42.js"
+          href="./script/static/js/jquery_alicloud_a/e1e8c0e862309cb4caf3c0d5fbea48bfb8eaad42.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/main_cn_alicloud_a/5a592a123d4c7bbd3e334e1a8e8526bca30aea75.js"
+          href="./script/static/js/main_cn_alicloud_a/5a592a123d4c7bbd3e334e1a8e8526bca30aea75.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/index_alicloud_a/1053c148f8dd609d3e2595864ac312d146ea2d65.js"
+          href="./script/static/js/index_alicloud_a/1053c148f8dd609d3e2595864ac312d146ea2d65.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/landingpage_alicloud_a/573406558ab592fc7b4b470efe3cda0386d3c2ef.js"
+          href="./script/static/js/landingpage_alicloud_a/573406558ab592fc7b4b470efe3cda0386d3c2ef.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/searchbox_alicloud_a/63d48ea860a41e4776f0e426fa52302337450ad1.js"
+          href="./script/static/js/searchbox_alicloud_a/63d48ea860a41e4776f0e426fa52302337450ad1.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
     <link rel="preload" as="script"
-          href="https://ac-a.static.booking.cn/static/js/error_catcher_bec_alicloud_a/0acd2ada6c74d5dec978a04ea837952bdf050cd2.js"
+          href="./script/static/js/error_catcher_bec_alicloud_a/0acd2ada6c74d5dec978a04ea837952bdf050cd2.js"
           crossorigin nonce="4DwZSPUvFd8eOkZ">
-    
+   
     <title>
         Booking.com | 优质酒店和住宿
     </title>
     
-    <link rel="alternate" type="text/html" hreflang="zh-cn" href="https://www.booking.com/index.zh-cn.html"
-          title="简体中文"/>
+     
+    
     <link rel="icon"
-          href="https://ac-a.static.booking.cn/static/img/favicon-new-32/40749a316c45e239a7149b6711ea4c48d10f8d89.ico"
+          href="./script/static/img/favicon-new-32/40749a316c45e239a7149b6711ea4c48d10f8d89.ico"
           sizes="any">
     <link rel="icon"
-          href="https://ac-a.static.booking.cn/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg"
+          href="./script/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg"
           type="image/svg+xml">
     <link rel="apple-touch-icon"
-          href="https://ac-a.static.booking.cn/static/img/apple-touch-icon-blue/5db9fd30d96b1796883ee94be7dddce50b73bb38.png"/>
+          href="./script/static/img/apple-touch-icon-blue/5db9fd30d96b1796883ee94be7dddce50b73bb38.png"/>
     <link rel="help"
           href="/faq.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02&amp;"/>
     <link rel="search" type="application/opensearchdescription+xml"
-          href="https://ac-a.static.booking.cn/static/opensearch/zh-cn/e44d907bf77c5add70d4a46fce6bff10be3e8d18.xml"
+          href="./script/static/opensearch/zh-cn/e44d907bf77c5add70d4a46fce6bff10be3e8d18.xml"
           title="Booking.com在线酒店预订"/>
-    <link href="https://plus.google.com/105443419075154950489" rel="publisher"/>
+    <link href="./script/105443419075154950489" rel="publisher"/>
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="client" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/bui-react.e8e22018.css">
+          href="./script/psb/capla/static/css/bui-react.e8e22018.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-CovidBanner" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/513.75e7f786.chunk.css">
+          href="./script/psb/capla/static/css/513.75e7f786.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-SimilarPropertiesCarousel" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/348.dc09efca.chunk.css">
+          href="./script/psb/capla/static/css/348.dc09efca.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-MerchCarousel" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/382.55353d8a.chunk.css">
+          href="./script/psb/capla/static/css/382.55353d8a.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-DestinationPostcardsDesktop-DestinationPostcardsDesktop"
-          rel="stylesheet" href="https://ac-a.static.booking.cn/psb/capla/static/css/514.3e7abeb8.chunk.css">
+          rel="stylesheet" href="./script/psb/capla/static/css/514.3e7abeb8.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-TripTypesCarousel" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/534.f6ac9b19.chunk.css">
+          href="./script/psb/capla/static/css/534.f6ac9b19.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-HeroBanner-HeroBannerDesktop" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/579.ccc062bf.chunk.css">
+          href="./script/psb/capla/static/css/579.ccc062bf.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-FullWidthBannerDesktop-FullWidthBannerDesktop"
-          rel="stylesheet" href="https://ac-a.static.booking.cn/psb/capla/static/css/736.efc019bd.chunk.css">
+          rel="stylesheet" href="./script/psb/capla/static/css/736.efc019bd.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-UniqueStaysProperties" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/224.e9ab6600.chunk.css">
+          href="./script/psb/capla/static/css/224.e9ab6600.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ"
           data-chunk="bookingcom-genius-credit-book-and-unlock-mfe-pages-GeniusVipCampaignsIndexBanner-GeniusVipCampaignsIndexBanner"
-          rel="stylesheet" href="https://ac-a.static.booking.cn/psb/capla/static/css/186.5332db14.chunk.css">
+          rel="stylesheet" href="./script/psb/capla/static/css/186.5332db14.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-GeniusSignInBanner-GeniusSignInBanner" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/527.44af578a.chunk.css">
+          href="./script/psb/capla/static/css/527.44af578a.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-GeniusSignInSheet-GeniusSignInSheet" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/802.928bb228.chunk.css">
+          href="./script/psb/capla/static/css/802.928bb228.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-SecondaryBanner-SecondaryBannerDesktop" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/664.2123fd3a.chunk.css">
+          href="./script/psb/capla/static/css/664.2123fd3a.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-BHAwarenessBanner-BHAwarenessBanner" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/119.1cf1747e.chunk.css">
+          href="./script/psb/capla/static/css/119.1cf1747e.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-DiscoveryByMonthCarousel" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/786.eb3ca334.chunk.css">
+          href="./script/psb/capla/static/css/786.eb3ca334.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ"
           data-chunk="bookingcom-search-web-searchresults-components-SearchBoxDesktopHorizontal-SearchBoxDesktopHorizontal"
-          rel="stylesheet" href="https://ac-a.static.booking.cn/psb/capla/static/css/778.071c6af8.chunk.css">
+          rel="stylesheet" href="./script/psb/capla/static/css/778.071c6af8.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-BasNDisplayBannerIndexPrimary" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/541.4f342d2c.chunk.css">
+          href="./script/psb/capla/static/css/541.4f342d2c.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="src-components-HomesGuestsLoveCarousel" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/76.29ea6195.chunk.css">
+          href="./script/psb/capla/static/css/76.29ea6195.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="bookingcom-web-shell-header-mfe-components-AccommodationHeader"
-          rel="stylesheet" href="https://ac-a.static.booking.cn/psb/capla/static/css/93.22edeb57.chunk.css">
+          rel="stylesheet" href="./script/psb/capla/static/css/93.22edeb57.chunk.css">
     <link nonce="4DwZSPUvFd8eOkZ" data-chunk="bookingcom-web-shell-header-mfe-components-GlobalAlerts" rel="stylesheet"
-          href="https://ac-a.static.booking.cn/psb/capla/static/css/665.4b0f9a6e.chunk.css">
+          href="./script/psb/capla/static/css/665.4b0f9a6e.chunk.css">
+    
 </head>
 <body data-bui-theme="legacy-light"
       id="b2indexPage"
@@ -130,7 +134,7 @@
                         <span data-testid="header-logo">
                         <a data-testid="header-booking-logo"
                            aria-label="Booking.com"
-                           href="./index.html"
+                           href="./index.jsp"
                            class="fc63351294">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 180 30">
                             <path fill="#fff"
@@ -140,18 +144,29 @@
                         </span>
                     </div>
                 </div>
+				<script type="text/javascript">
+					checkRecords = function() {
+						var phone = prompt("输入手机号，查看历史订单");
+						if(phone == null){
+							return;
+						}
+						if(phone == ""){
+							window.alert("手机号不能为空！");
+							return;
+						}
+						document.getElementById("phone_input").value = phone;
+						document.getElementById("checkRecordsForm").submit();
+					}
+				</script>
+				<form id="checkRecordsForm" action="/SoftwareEngineering_war_exploded/checkRecords" method="GET">
+					<input type="hidden" name="phone" id="phone_input" value="" />
+				</form>
                 <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643 c7b46bab72">
-                    <a role="button" data-testid="header-sign-up-button"
-                       aria-label="创建帐号"
-                       href=""
-                       class="fc63351294 a822bdf511 e2b4ffd73d f7db01295e c334e6f658 a9a04704ee js-header-login-link">
-                        <span class="e57ffa4eb5">注册</span>
-                    </a>
                     <div class="bb0b3e18ca d9b0185ac2">
                         <a data-testid="header-sign-in-button" aria-label="登录"
-                           href=""
+                           onclick="checkRecords()"
                            class="fc63351294 a822bdf511 e2b4ffd73d f7db01295e c334e6f658 a9a04704ee js-header-login-link">
-                            <span class="e57ffa4eb5">登录</span>
+                            <span class="e57ffa4eb5">查看历史订单</span>
                         </a>
                     </div>
                 </div>
@@ -187,7 +202,7 @@
                                         </svg>
                                     </span>
                                 </button>
-                        </span>
+                        	</span>
                         </li>
                     </ul>
                 </div>
@@ -239,13 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        <% 
-                                        /*LocalDate today = LocalDate.now(); 
-                                        LocalDate nextDay = today.plusDays(1);
-                                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-mm-dd");
-                                        String todayStr = formatter.format(today);
-                                        String nextDayStr = formatter.format(nextDay);*/
-                        %>
+                        
                         <div class="f9cf783bde">
                             <div tabindex="-1" class="ed2ff9f661">
                                 <div class="b91c144835" role="none" data-testid="searchbox-dates-container">
@@ -258,13 +267,13 @@
                                     <div class="form-group input-group-sm">
                                         <label>入住日期</label>
                                         <input type="date" name="check_in_date" class="form-control" id="check_in_date"
-                                               value="2023-6-15" placeholder="入住日期"/>
+                                               value="2023-06-15" placeholder="入住日期"/>
                                     </div>
                                     <span class="hyphen">—</span>
                                     <div class="form-group input-group-sm">
                                         <label>退房日期</label>
                                         <input type="date" name="check_out_date" class="form-control" id="check_out_date"
-                                               value="2023-6-16" placeholder="退房日期"/>
+                                               value="2023-06-16" placeholder="退房日期"/>
                                     </div>
                                 </div>
                             </div>
@@ -600,10 +609,10 @@
                                     </div>
                                 </div>
                                 <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 f99e477b40"><a
-                                        href="https://www.booking.com/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
+                                        href="./script/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
                                         class="fc63351294 a822bdf511 e2b4ffd73d f7db01295e c334e6f658 a9a04704ee"><span
                                         class="e57ffa4eb5">登录</span></a><a
-                                        href="https://www.booking.com/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
+                                        href="./script/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
                                         class="fc63351294 a822bdf511 e3c025e003 f7db01295e c334e6f658 e1b7cfea84"><span
                                         class="e57ffa4eb5">注册</span></a></div>
                             </div>
@@ -1096,7 +1105,7 @@ window.BUI.getInstance(this, 'Tooltip').hide();
                                     <span>关注Booking.com官方微信号</span>
                                     <br>
                                     <!--<img width="150px"
-                                         src="https://ac-a.static.booking.cn/static/img/desktop_footer_WOA/da4aea624f2026b3e6826d56e4a2555f67e8df89.jpg"
+                                         src="./script/static/img/desktop_footer_WOA/da4aea624f2026b3e6826d56e4a2555f67e8df89.jpg"
                                          alt="关注Booking.com官方微信号"/>-->
                                     <br>
                                     <span>全球特价酒店应有尽有！</span>

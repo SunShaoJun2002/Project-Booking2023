@@ -1,7 +1,5 @@
 package SE.pojo;
 
-import java.sql.Date;
-
 public class Record {
     private Integer record_id;
     private Integer room_num;

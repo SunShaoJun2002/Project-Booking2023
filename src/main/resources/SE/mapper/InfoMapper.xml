@@ -4,6 +4,14 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="SE.mapper.InfoMapper">
+    <!--
+    <resultMap id="Image" type="SE.pojo.Image">
+        <id column="imgId" property="imgId" jdbcType="DECIMAL" />
+        <result column="pic" property="pic" jdbcType="BLOB" />
+    </resultMap>
+    <insert id="testInsertPic" parameterType="SE.pojo.Image">
+        insert into image (imgId,pic) values(#{imgId},#{pic})
+    </insert>-->
     <select id="testSearch" resultType="SE.pojo.Info">
         select * from info where id in
         (
@@ -68,7 +76,7 @@
         select * from info
         <where>
             <if test="Province != null">
-                province like #{Province}
+                (province like #{Province} or hotel_name like #{Province} or region like #{Province} or address like #{Province})
             </if>
             <choose>
                 <when test="RoomDesc != null and RoomNum != null and StartDate != null and EndDate != null">
@@ -110,7 +118,7 @@
         select id as hotel_id from info
         <where>
             <if test="Province != null">
-                province like #{Province}
+                (province like #{Province} or hotel_name like #{Province} or region like #{Province} or address like #{Province})
             </if>
             <choose>
                 <when test="RoomDesc != null and RoomNum != null and StartDate != null and EndDate != null">
@@ -148,27 +156,84 @@
     </select>
 
     <update id="reset">
-        update testdbconnection set `condition`=0
+        update testdbconnection set `condition`=1
     </update>
 
     <update id="selectFacility">
-        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from feature where facility_list like #{Facilities})
+        update testdbconnection set `condition`=0 where hotel_id not in (select id as hotel_id from feature where
+        <if test="Facilities0!=null">
+            facility_list like #{Facilities0}
+        </if>
+        <if test="Facilities1!=null">
+            or facility_list like #{Facilities1}
+        </if>
+        <if test="Facilities2!=null">
+            or facility_list like #{Facilities2}
+        </if>
+        <if test="Facilities3!=null">
+            or facility_list like #{Facilities3}
+        </if>
+        <if test="Facilities4!=null">
+            or facility_list like #{Facilities4}
+        </if>
+        <if test="Facilities5!=null">
+            or facility_list like #{Facilities5}
+        </if>
+        <if test="Facilities6!=null">
+            or facility_list like #{Facilities6}
+        </if>
+        <if test="Facilities7!=null">
+            or facility_list like #{Facilities7}
+        </if>
+        )
     </update>
 
     <update id="selectStarRating">
-        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from info where star_rating=#{Star})
+        update testdbconnection set `condition`=0 where hotel_id not in (select id as hotel_id from info where
+        <if test="Star0!=null">
+            star_rating=#{Star0}
+        </if>
+        <if test="Star1!=null">
+            or star_rating=#{Star1}
+        </if>
+        <if test="Star2!=null">
+            or star_rating=#{Star2}
+        </if>
+        <if test="Star3!=null">
+            or star_rating=#{Star3}
+        </if>
+        <if test="Star4!=null">
+            or star_rating=#{Star4}
+        </if>
+        <if test="Star5!=null">
+            or star_rating=#{Star5}
+        </if>
+        )
     </update>
 
     <update id="selectGoodLocation">
-        update testdbconnection set `condition`=1 where hotel_id not in (select id as hotel_id from feature where feature='NULL')
+        update testdbconnection set `condition`=0 where hotel_id in (select id as hotel_id from feature where feature='NULL')
     </update>
 
     <update id="selectBreakfast">
-        update testdbconnection set `condition`=1 where hotel_id not in (select id as hotel_id from feature where breakfast='NULL')
+        update testdbconnection set `condition`=0 where hotel_id in (select id as hotel_id from feature where breakfast='NULL')
     </update>
 
     <update id="selectRating">
-        update testdbconnection set `condition`=1 where hotel_id in (select id as hotel_id from info where rating>=#{Rate} and rating&lt;=#{Rate}+1)
+        update testdbconnection set `condition`=0 where hotel_id not in (select id as hotel_id from info where
+        <if test="Rate0!=null">
+            (rating>=#{Rate0} and rating&lt;=#{Rate0}+1)
+        </if>
+        <if test="Rate1!=null">
+            or (rating>=#{Rate1} and rating&lt;=#{Rate1}+1)
+        </if>
+        <if test="Rate2!=null">
+            or (rating>=#{Rate2} and rating&lt;=#{Rate2}+1)
+        </if>
+        <if test="Rate3!=null">
+            or (rating>=#{Rate3} and rating&lt;=#{Rate3}+1)
+        </if>
+        )
     </update>
 
     <select id="countOne" resultType="java.lang.Integer">
@@ -176,6 +241,9 @@
     </select>
     <select id="selectOne" resultType="SE.pojo.Info">
         select A.* from info as A, testdbconnection as B where B.`condition`=1 and A.id=B.hotel_id
+    </select>
+    <select id="selectById" resultType="SE.pojo.Info">
+        select * from info where id=#{id}
     </select>
 
 </mapper>

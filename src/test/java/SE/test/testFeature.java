@@ -23,14 +23,9 @@ public class testFeature {
 
         FeatureMapper featureMapper = sqlSession.getMapper(FeatureMapper.class);
 
-        List<Feature> features = featureMapper.selectById(1);
+        Feature features = featureMapper.selectById(1);
 
-        System.out.println(features.size());
-        for(int i = 0; i != 10; ++i)
-        {
-            if (i >= features.size()) break;
-            System.out.println(features.get(i));
-        }
+        System.out.println(features);
     }
 
     @Test
