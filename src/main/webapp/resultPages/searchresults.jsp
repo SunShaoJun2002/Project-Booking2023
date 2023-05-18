@@ -340,7 +340,21 @@ window.cspViolationsCount++;
                             <span class="e57ffa4eb5">CNY</span>
                         </button>
                     </span>
-                    
+                    <span class="cb5ebe3ffb">
+                        <button aria-label="语言：简体中文" aria-expanded="false" data-testid="header-language-picker-trigger"
+                                type="button" class="fc63351294 a822bdf511 e3c025e003 cfb238afa1 c334e6f658 e634344169">
+                            <span class="e57ffa4eb5">
+                                <div class="a826ba81c4 fa71cba65b e90b59f170 ef9845d4b3 d0e592cd4e f98ba2c0ed">
+                                    <picture class="e4e8d3238b bd52474e6b">
+                                        <img class="c3194e6c89 e5eb7fb6cb e418d76df7"
+                                             src="./img/china_flag.png"
+                                             alt="" role="presentation"
+                                             loading="lazy"/>
+                                    </picture>
+                                </div>
+                            </span>
+                        </button>
+                    </span>
                     <span class="cb5ebe3ffb">
                         <button aria-expanded="false" aria-label="关注Booking.com官方微信号"
                                 data-testid="header-social-entrypoint" data-social-type="wechat" type="button"
@@ -532,13 +546,8 @@ window.cspViolationsCount++;
                                 <div class="b3d1cacd40 d5f78961c3 a2cb913cd1">
                                     <h1 class="e1f827110f f0d4d6a2f5 fda3b74d0d">
                                     <% 
-                                    String destName = (String)request.getAttribute("destName");
                                     if(hotelList.size() > 0) {
-                                    	if(destName == null){
-                                    		out.print(hotelList.get(0).getProvince());
-                                    	}else{
-                                    		out.print(destName);
-                                    	}
+                                    	out.print(hotelList.get(0).getProvince()); 
                                     }else{
                                     	out.print("中国");
                                     }
@@ -567,7 +576,17 @@ window.cspViolationsCount++;
                                 <div data-capla-component="b-search-web-searchresults/PropertiesListDesktop"
                                      data-capla-namespace="b-search-web-searchresultsYTMJcbTN">
                                     <div class="dcf496a7b9">
-                                        
+                                        <div><span class="cb5ebe3ffb"><button aria-expanded="false"
+                                                                              data-testid="sorters-dropdown-trigger"
+                                                                              data-selected-sorter="popularity"
+                                                                              type="button"
+                                                                              class="fc63351294 a822bdf511 e2b4ffd73d fa565176a8 f7db01295e c334e6f658 f95c50be27 a9a04704ee"><span
+                                                class="e57ffa4eb5">排序方式：热门推荐</span><span
+                                                class="b9def0936d aff03b959f"><span class="b6dc9a9e69 e25355d3ee"
+                                                                                    aria-hidden="true"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path
+                                                d="M12 20.09a1.24 1.24 0 0 1-.88-.36L6 14.61a.75.75 0 1 1 1.06-1.06L12 18.49l4.94-4.94A.75.75 0 0 1 18 14.61l-5.12 5.12a1.24 1.24 0 0 1-.88.36zm6-9.46a.75.75 0 0 0 0-1.06l-5.12-5.11a1.24 1.24 0 0 0-1.754-.006l-.006.006L6 9.57a.75.75 0 0 0 0 1.06.74.74 0 0 0 1.06 0L12 5.7l4.94 4.93a.73.73 0 0 0 .53.22c.2 0 .39-.078.53-.22z"></path></svg></span></span></button></span>
+                                        </div>
                                         <div>
                                             <div></div>
                                         </div>
@@ -928,14 +947,8 @@ window.cspViolationsCount++;
                                         <div class="d7a0553560">
                                             <div class="d8f77e681c">
                                             <% 
-                                            
-                                            
                                             if(hotelList.size() > 0){
-                                            	if(destName == null){
-                                            		out.print(hotelList.get(0).getProvince());
-                                            	}else{
-                                            		out.print(destName);
-                                            	}
+                                            	out.print(hotelList.get(0).getProvince()); 
                                             }else{
                                             	out.print("中国"); 
                                             }
@@ -1090,7 +1103,7 @@ window.cspViolationsCount++;
                                         </div>
                                         <div class="fca8fcd83b">
                                             <div tabindex="-1">
-                                                <input type="number" name="adult_num" class="adult_num" id="adult_num" min="0" max="30" value="2"
+                                                <input type="number" name="adult_num" class="adult_num" id="adult_num" min="1" max="30" value="2"
                                                        style="width:30px; height:20px;" oninput="this.value=this.value.replace(/\D/g);"/>
                                                 位成人 ·
                                                 <input type="number" name="child_num" class="child_num" id="child_num" min="0" max="10" value="0"
@@ -1242,7 +1255,37 @@ window.cspViolationsCount++;
                                     	<span class="e57ffa4eb5">筛选酒店</span>
                                     </button>
 									
-									
+									<%
+										/*Integer[] facilityNums = (Integer[])request.getAttribute("facilityNums");
+										if(facilityNums == null){
+											facilityNums = new Integer[8];
+											for(int i = 0; i < 8; ++i){
+												facilityNums[i] = 0;
+											}
+										}
+										Integer[] starRatingNums = (Integer[])request.getAttribute("starRatingNums");
+										if(starRatingNums == null){
+											starRatingNums = new Integer[6];
+											for(int i = 0; i < 6; ++i){
+												starRatingNums[i] = 0;
+											}
+										}
+										Integer locationIsGoodNums = (Integer)request.getAttribute("locationIsGoodNums");
+										if(locationIsGoodNums == null){
+											locationIsGoodNums = 0;
+										}
+										Integer hasBreakfastNums = (Integer)request.getAttribute("hasBreakfastNums");
+										if(hasBreakfastNums == null){
+											hasBreakfastNums = 0;
+										}
+										Integer[] ratingNums = (Integer[])request.getAttribute("ratingNums");
+										if(ratingNums == null){
+											ratingNums = new Integer[4];
+											for(int i = 0; i < 4; ++i){
+												ratingNums[i] = 0;
+											}
+										}*/
+									%>
 									
                                     <hr aria-hidden="true" data-testid="filters-group-divider"
                                         class="d5800fb289 a27af88462 abe36eb989"/>

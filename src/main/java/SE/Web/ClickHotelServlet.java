@@ -25,7 +25,6 @@ public class ClickHotelServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================ClickHotelServlet.begin=========================================");
-        StringTools.setHashMap();
 
         Integer hotel_id = Integer.valueOf(request.getParameter("hotel_id"));
 

@@ -34,6 +34,4 @@ public interface InfoMapper {
     int countOne();
     List<Info> selectOne();
     //void testInsertPic(Image);
-    List<Info> selectAll();
-    void insertAll();
 }

@@ -3079,7 +3079,18 @@
 								aria-expanded="false" data-testid="header-currency-picker-trigger" aria-label="人民币价格"
 								type="button"
 								class="fc63351294 a822bdf511 e3c025e003 cfb238afa1 c334e6f658 e634344169"><span
-									class="e57ffa4eb5">CNY</span></button></span><span class="cb5ebe3ffb"></span><span class="cb5ebe3ffb"><button aria-expanded="false"
+									class="e57ffa4eb5">CNY</span></button></span><span class="cb5ebe3ffb"><button
+								aria-expanded="false" data-testid="header-language-picker-trigger" aria-label="语言：简体中文"
+								type="button"
+								class="fc63351294 a822bdf511 e3c025e003 cfb238afa1 c334e6f658 e634344169"><span
+									class="e57ffa4eb5">
+									<div class="a826ba81c4 fa71cba65b e90b59f170 ef9845d4b3 d0e592cd4e f98ba2c0ed">
+										<picture class="e4e8d3238b bd52474e6b"><img
+												class="c3194e6c89 e5eb7fb6cb e418d76df7"
+												src="https://t-cf.bstatic.com/design-assets/assets/v3.68.0/images-flags/Cn@3x.png"
+												alt="" role="presentation" loading="lazy" /></picture>
+									</div>
+								</span></button></span><span class="cb5ebe3ffb"><button aria-expanded="false"
 								aria-label="关注Booking.com官方微信号" data-testid="header-social-entrypoint"
 								data-social-type="wechat" type="button"
 								class="fc63351294 a822bdf511 e3c025e003 fa565176a8 cfb238afa1 c334e6f658 e634344169"><span
@@ -4232,7 +4243,10 @@ jq_tooltip
 									</div>
 									<div class="bui-grid__column bui-grid__column-4 k2-hp--highlights">
 										<div class="property_hightlights_wrapper">
-											
+											<div class="property_highlights_left chain-logo__white-bg">
+												<img src="./script/xdata/images/xphoto/max240x120/32023782.webp?k=0e9afd285a16af5982d013df6ecb912bf57400b46fa9db8d7ef945abf32f5ead&o="
+													alt="Holiday Inn Express" class="chain-content-logo">
+											</div>
 											<div class="property-highlights ph-icon-fill-color">
 												<h3 class="bui-f-font-heading">
 													住宿特色
@@ -4317,7 +4331,11 @@ jq_tooltip
 													</div>
 												</div>
 												<div class="ph-footer">
-													
+													<button class=" txp-sidebar-cta bui-button bui-button--primary call_to_action--wide px--fw-cta js-ph__cta " data-et-click="  " type="button">
+														<span class="bui-button__text">
+															&#x73B0;&#x5728;&#x5C31;&#x9884;&#x8BA2;
+														</span>
+													</button>
 													<div class="hp-lists-ph">
 														<div class="txp-sidebar-block hp-lists hp-lists--save-wl-below-ph hide"
 															data-hotel-id="4685428">
@@ -4668,7 +4686,17 @@ jq_tooltip
 																			</div>
 																			<div class="hprt-roomtype-block ">
 																			</div>
-																			
+																			<div class="hprt-roomtype-bed">
+																				<div class="bed-types-wrapper">
+																					<ul class="rt-bed-types">
+																						<li class="rt-bed-type">
+																							<span>
+																								<i class="bicon bicon-double"></i>
+																							</span>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
 																			<div class="hprt-roomtype-block">
 																				<div class="hprt-facilities-block"
 																					data-component="hotel/new-rooms-table/highlighted-facilities">
@@ -4708,12 +4736,9 @@ jq_tooltip
 																					</div>
 																					<hr
 																						class="bui-divider bui-spacer--medium" />
-																					<% 
-																						String room_more_facilities_str = room.getRoom_more_facilities();
-																						if(!room_more_facilities_str.equals("NULL")) {
-																					%>
 																					<ul class="hprt-facilities-others">
 																						<%
+																							String room_more_facilities_str = room.getRoom_more_facilities();
 																							String[] room_more_facilities = room_more_facilities_str.split(",");
 																							Integer numOfMoreFacilities = room_more_facilities.length;
 																							
@@ -4742,7 +4767,6 @@ jq_tooltip
 																						<% } %>
 																						
 																					</ul>
-																					<% } %>
 																				</div>
 																			</div>
 																		</div>
@@ -5162,7 +5186,36 @@ jq_tooltip
 									<div data-capla-component="b-property-web-property-page/PropertyHealthSafetyDesktop"
 										data-capla-namespace="b-property-web-property-pageEQYZTYLJ">
 										<div>
-											
+											<div data-testid="health-safety-container"><button class="a8f12dc32b"
+													data-testid="health-safety-banner-CTA">
+													<section aria-labelledby=":R6:"
+														class="a826ba81c4 fe821aea6c fa2f36ad22 afd256fc79 d08f526e0d ed11e24d01 ef9845d4b3 a053643c73">
+														<div class="a1b3f50dcd bdf0df2d01 b2fe1a41c3 d19ba76520"><span
+																class="b7ddc27f06"><span class="b6dc9a9e69 e6c50852bd"
+																	aria-hidden="true"><span
+																		class="b6dc9a9e69 dffaa08342 e25355d3ee"
+																		aria-hidden="true"><svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			viewBox="0 0 24 24">
+																			<path
+																				d="M18 9a1.5 1.5 0 0 0-1.5-1.5h-2.25l.75.75V6a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 9 6v2.25l.75-.75H7.5A1.5 1.5 0 0 0 6 9v3a1.5 1.5 0 0 0 1.5 1.5h2.25L9 12.75V15a1.5 1.5 0 0 0 1.5 1.5h3A1.5 1.5 0 0 0 15 15v-2.25l-.75.75h2.25A1.5 1.5 0 0 0 18 12V9zm-1.5 0v3h-2.25a.75.75 0 0 0-.75.75V15h-3v-2.25a.75.75 0 0 0-.75-.75H7.5V9h2.25a.75.75 0 0 0 .75-.75V6h3v2.25c0 .414.336.75.75.75h2.25zm-15-5.077v7.614c0 5.237 3.225 9.933 8.113 11.813l1.041.4a3.75 3.75 0 0 0 2.692 0l1.041-.4A12.657 12.657 0 0 0 22.5 11.537V3.923a2.234 2.234 0 0 0-1.306-2.044A22.463 22.463 0 0 0 11.993 0C8.846-.03 5.715.61 2.818 1.874A2.24 2.24 0 0 0 1.5 3.928zM3 3.918a.736.736 0 0 1 .43-.675A20.937 20.937 0 0 1 11.993 1.5a20.969 20.969 0 0 1 8.589 1.748c.252.116.42.38.418.67v7.619c0 4.616-2.843 8.756-7.151 10.413l-1.041.4c-.52.2-1.096.2-1.616 0l-1.041-.4A11.157 11.157 0 0 1 3 11.537V3.923z">
+																			</path>
+																		</svg></span></span></span>
+															<div class="b1e6dd8416 aacd9d0b0a">
+																<div class="a1b3f50dcd a1f3ecff04 f7c6687c3d">
+																	<div class="b8ef7618ca a57ee2799e">
+																		<h3 id=":R6:" class="ac78a73c96 cf6551f81f">
+																			额外健康与安全措施</h3>
+																	</div>
+																	<div class="db29ecfbe2">
+																		<div>该住宿已采取额外健康与卫生措施，保证你的安全是他们的首要任务</div><span
+																			class="fc63351294 a168c6f285 a25b1d9e47"><span>查看健康与安全详情</span></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</button></div>
 										</div>
 									</div>
 								</div>
@@ -5237,7 +5290,6 @@ jq_tooltip
 											</div>
 											<%
 												Float[] single_scores = new Float[7];
-												Random random = new Random();
 												if(hotel_feature == null){
 													for(int i = 0; i < 7; ++i){
 														single_scores[i] = 5.5f;
@@ -5247,13 +5299,10 @@ jq_tooltip
 													if(!single_scores_str.equals("NULL")){
 														String[] single_scores_strs = single_scores_str.split(",");
 														for(int i = 0; i < 7; ++i){
-															if(i >= single_scores_strs.length){
-																single_scores[i] = 5.5f + random.nextInt(4);
-															}else{
-																single_scores[i] = Float.parseFloat(single_scores_strs[i]);
-															}
+															single_scores[i] = Float.parseFloat(single_scores_strs[i]);
 														}
 													}else{
+														Random random = new Random();
 														for(int i = 0; i < 7; ++i){
 															single_scores[i] = 5.5f + random.nextInt(4);
 														}
@@ -5479,14 +5528,207 @@ jq_tooltip
 	<div id="footer_menu_track"
 		class="footerconstraint cnd-onview-anchor footer_no_lang_track a11y_fix_footer_contrast_footerconstraint "
 		role="contentinfo">
-		
+		<div id="newsletter_form_footer_container" class="newsletter_subscribe_with_sprites " role="region"
+			aria-label="订阅我们的电子报以获取优惠信息 - 页脚" data-emk-subscription-success-remove
+			data-et-click="customGoal:cCHObTRVDEZRdPQBcGCfTKYCcZeKe:5">
+			<form action="" method="post"
+				name="newsletterform" id="emk-footer" class="footerForm emk-subscription-entry-point "
+				data-component="emk/subscription-entry-point emk/subscription-entry-point-feedback-msg"
+				data-emk-entry-point-label="footer">
+				<input type="hidden" name="aid" value="397645" />
+				<input type="hidden" name="label"
+					value="bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4ApfO7aIGwAIB0gIkMzQyMWNhOGQtMWNmMi00YmQ5LWE4YWUtNjI2ZGY4OTQ1NDRj2AIE4AIB" />
+				<input type="hidden" name="sid" value="f0f82b20b46106bf73b9641ed765ee02" />
+				<input type="hidden" name="url" value="" />
+				<input type="hidden" name="hostname" value="www.booking.com" />
+				<input type="hidden" name="companyname" value="Booking.com" />
+				<input type="hidden" name="aid" value="397645" data-ajax-submit />
+				<input type="hidden" name="label"
+					value="bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4ApfO7aIGwAIB0gIkMzQyMWNhOGQtMWNmMi00YmQ5LWE4YWUtNjI2ZGY4OTQ1NDRj2AIE4AIB"
+					data-ajax-submit />
+				<input type="hidden" name="endpoint_url"
+					value="./script&#47;hotel&#47;cn&#47;holiday-inn-express-nanjing-dongshan.zh-cn.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4ApfO7aIGwAIB0gIkMzQyMWNhOGQtMWNmMi00YmQ5LWE4YWUtNjI2ZGY4OTQ1NDRj2AIE4AIB&amp;sid=f0f82b20b46106bf73b9641ed765ee02&amp;all_sr_blocks=468542806_246088447_2_1_0;checkin=2023-06-02;checkout=2023-06-03;dest_id=44;dest_type=country;group_adults=1;group_children=0;hapos=1;highlighted_blocks=468542806_246088447_2_1_0;hpos=1;matching_block_id=468542806_246088447_2_1_0;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;sr_pri_blocks=468542806_246088447_2_1_0__32500;srepoch=1683711772;srpvid=57ba444d8f80007e;type=total;ucfs=1&amp;#emk-footer" />
+				<input type="hidden" name="error_url"
+					value="./script&#47;hotel&#47;cn&#47;holiday-inn-express-nanjing-dongshan.zh-cn.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4ApfO7aIGwAIB0gIkMzQyMWNhOGQtMWNmMi00YmQ5LWE4YWUtNjI2ZGY4OTQ1NDRj2AIE4AIB&amp;sid=f0f82b20b46106bf73b9641ed765ee02&amp;all_sr_blocks=468542806_246088447_2_1_0;checkin=2023-06-02;checkout=2023-06-03;dest_id=44;dest_type=country;group_adults=1;group_children=0;hapos=1;highlighted_blocks=468542806_246088447_2_1_0;hpos=1;matching_block_id=468542806_246088447_2_1_0;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;sr_pri_blocks=468542806_246088447_2_1_0__32500;srepoch=1683711772;srpvid=57ba444d8f80007e;type=total;ucfs=1&amp;#emk-footer" />
+				<input type="hidden" name="dest_type" value="hotel" data-ajax-submit />
+				<input type="hidden" name="dest_id" value="4685428" data-ajax-submit />
+				<input type="hidden" name="subscribe_source" value="footer_hotel" data-ajax-submit />
+				<input type="hidden" name="opt_in" value="1" data-ajax-submit />
+				<div class="emk_footer_update emk_footer_centered emk_footer_update_space ">
+					<div class="footerconstraint-inner">
+						<div class="cs_contact_footer">
+							<div class="cs_contact_footer_icon">
+								<i class="cs_contact_footer_phone_icon"></i>
+							</div>
+							<div class="cs_contact_footer_title">
+								<h3 class="cs_contact_footer_title_header">24小时客服助您安心出行</h3>
+								<p class="cs_contact_footer_title_subheader">订单有问题？我们来帮您！</p>
+							</div>
+							<div class="cs_contact_footer_numbers">
+								<div class="cs_contact_footer_numbers_section domestic_international_line">
+									<p class="number_title">
+										中文客服热线</p>
+									<p class="number_content">
+										<a href="" class="number_content" target="_blank">
+											点击了解更多客服帮助
+										</a>
+									</p>
+								</div>
+								<div class="cs_contact_footer_numbers_section help_center">
+									<p class="number_title">
+										常见问题</p>
+									<p class="number_content">去<a
+											href="" target="_blank" class="number_content">帮助中心</a>看看</p>
+								</div>
+							</div>
+						</div>
+						<div class="emk_footer_wrapper">
+							<div class="emk_footer_banner_block">
+								<h2>方便又省钱！</h2>
+							</div>
+							<div class="emk_footer_subbanner_block">
+								立即注册，获取优惠好价！
+							</div>
+							<div class="clearfix"></div>
+							
+							<p class="emk-feedback-msg use_sprites_no_back -invalid" role="alert" aria-live="assertive">
+								<span class="bicon-close" aria-hidden="true"></span>
+								<span class="invisible_spoken">错误：</span>
+								请输入有效电邮
+							</p>
+							<p class="emk-feedback-msg use_sprites_no_back -error" role="alert" aria-live="assertive">
+								<span class="bicon-close" aria-hidden="true"></span>
+								<span class="invisible_spoken">错误：</span>
+								抱歉，网页出现错误！
+							</p>
+							<p class="emk-feedback-msg use_sprites_no_back -success" role="status"
+								aria-live="assertive">
+								<span class="bicon-checkyes" aria-hidden="true"></span>
+								谢谢！我们已向你发送电子邮件，你可以通过邮件完成订阅
+							</p>
+						</div>
+					</div>
+					<input name="recaptcha_enabled" value="1" type="hidden" data-ajax-submit>
+					<script nonce="9jmEHBuvHcdLmqi">
+						window.onLoadRecaptchaV3Callback = function () {
+							grecaptcha.ready(function () {
+								grecaptcha.execute('6LfzopcUAAAAAPh4ue2iRjzP6XdxDVpwJigtlmeD', { action: 'hotel' }).then(function (token) {
+									var target = $('[data-component*="emk/subscription-entry-point"]');
+									target.append("<input type=hidden name=recaptcha_token value=" + token + " data-ajax-submit>");
+									target.closest('form').submit(function () {
+										$('.grecaptcha-badge').show().css('visibility', 'visible');
+									});
+								});
+							});
+						};
+					</script>
+					<style nonce="9jmEHBuvHcdLmqi">
+						.grecaptcha-badge {
+							display: none;
+							bottom: 90px !important;
+						}
+					</style>
+					<div data-component="core/recaptcha/v3" data-key="6LfzopcUAAAAAPh4ue2iRjzP6XdxDVpwJigtlmeD"
+						data-onload="onLoadRecaptchaV3Callback" data-delay-load="load"></div>
+				</div>
+			</form>
+		</div>
 		<div style="clear: both;"></div>
 		<div id="booking-footer" class="footer-wrapper">
-			
+			<div id="footer_top_menu" class="footer-top-menu">
+				<div class="footer-top-partners clearfix js-footer-top-menu">
+					<div class="footerconstraint-inner clearfix">
+						<div id="footertopnav-partners" role="navigation">
+							<p class="footer-top-partner-text footer-top-partner-buttons">
+								<a ref="nofollow"
+									href="" target="_blank"
+									data-ga-track="click|pageview:/internallink/partner/footer/hotellink/hotel/zh-cn"
+									data-et-click="customGoal:cCHObTRVDEZRdPQBcGCfTKYCcZeKe:4 "
+									data-et-view="HCZEZUaNZIUONSFTUQODZEYTYeYINXGET:1" class="footer-top-button"
+									data-qa="joinapp_ep">
+									&#x4E0A;&#x7EBF;&#x6211;&#x7684;&#x4F4F;&#x5BBF;
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="footerconstraint-inner clearfix">
+					<div id="footertopnav" role="navigation">
+						<ul class="footer-top-links-list">
+							
+							<li class="footer-top-link">
+								<a href=""> 您的帐户 </a>
+							</li>
+							<li class="footer-top-link">
+								<a class="manage"
+									href="" class="tracked">
+									在线修改订单
+								</a>
+							</li>
+							<li class="footer-top-link" data-ga-track="click|CSIR|CS|footer_top_customer_service_help">
+								<a class="cuca"
+									href="" data-ga-track="click|Click|Action: hotel|hc_entrypoint_blue_footer"
+									data-bui-component="Tooltip" title="您的参考编号是 &ldquo;F0F82B2&rdquo;">
+									客服帮助
+								</a>
+							</li>
+							<script nonce="9jmEHBuvHcdLmqi">
+								document.querySelector('.cuca').addEventListener('blur', function () {
+									window.BUI.getInstance(this, 'Tooltip').hide();
+								})
+							</script>
+							<li class="footer-top-link">
+								<a href="" data-bui-component="Tooltip" title="成为分销合作伙伴" class="footer_become_affiliate"
+									data-ga-track="click|pageview:/internallink/partner/footer/affiliatelink/hotel/zh-cn">
+									成为分销合作伙伴
+								</a>
+								<script nonce="9jmEHBuvHcdLmqi">
+									document.querySelector('.footer_become_affiliate').addEventListener('blur', function () {
+										window.BUI.getInstance(this, 'Tooltip').hide();
+									})
+								</script>
+							</li>
+							<li class="footer-top-link">
+								<a href="" class="tracked"
+									data-google-track="Click/Action: hotel/BBTool Footer BBZ">Booking.com商旅服务</a>
+							</li>
+							<li class="footer-top-link footer-top-link--last china_gtw_footer_menu">
+								<a href="#" class="jq_tooltip" data-title="关注Booking.com官方微信号"
+									data-node_tt_id="china_gtw_header_hover" data-tooltip-class="gtw_header_tooltip"
+									id="china_gtw_header_cta">
+									关注Booking.com官方微信号<img width="25px"
+										src="./script/static/img/wechat2/38ee5959c79a230731f7b5191e92c4bf7c051069.png"
+										alt="关注Booking.com官方微信号" />
+								</a>
+								<div id="china_gtw_header_hover" style="display:none">
+									<div style="text-align: center; width: 180px;padding: 10px;">
+										<span>关注Booking.com官方微信号</span>
+										<br>
+										<img width="150px"
+											src="./script/static/img/desktop_footer_WOA/da4aea624f2026b3e6826d56e4a2555f67e8df89.jpg"
+											alt="关注Booking.com官方微信号" />
+										<br>
+										<span>全球特价酒店应有尽有！</span>
+									</div>
+									<script nonce="9jmEHBuvHcdLmqi">
+										document.getElementById('china_gtw_header_cta').addEventListener('click', function (e) {
+											e.preventDefault();
+										})
+									</script>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 			<div role="region" aria-label="即刻下载Booking.com免费应用程序" class="local_info_bot footerconstraint-inner">
 				<div class="local_info_bot_inner">
-					
+					<div class="extranet_link_container">
+						<a class="extranet_link"
+							href="" data-ga-track="click|Footer|Click - Extranet login|hotel">
+							登录后台
+						</a>
+					</div>
 					<div class="footercopyright ">
 						<div class="whitebar">
 							<div class="copyright_text">
@@ -5502,7 +5744,35 @@ jq_tooltip
 				<div class="footer__priceline">
 					<p class="footer__priceline__title"> Booking.com隶属于Booking Holdings Inc.，该集团是深受全球用户好评的在线旅行及周边服务供应商。
 					</p>
-					
+					<div class="footer__priceline__list">
+						<ul>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+									title="Booking.com" alt="Booking.com" height="26" width="91">
+								</img>
+							</li>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+									title="Priceline" alt="Priceline" height="26" width="91">
+							</li>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+									title="Kayak" alt="Kayak" height="26" width="79">
+							</li>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+									title="Agoda" alt="Agoda" height="26" width="70">
+							</li>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png"
+									title="Rentalcars" alt="Rentalcars" height="26" width="109">
+							</li>
+							<li>
+								<img src="./script/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+									title="OpenTable" alt="OpenTable" height="26" width="95">
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

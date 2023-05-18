@@ -3,7 +3,6 @@ package SE.Web;
 import SE.mapper.RecordMapper;
 import SE.pojo.Record;
 import SE.util.RecordData;
-import SE.util.StringTools;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -22,7 +21,6 @@ public class FinalOrderServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================OrderHotelServlet.begin=========================================");
-        StringTools.setHashMap();
         request.setCharacterEncoding("UTF-8");
 
         String business_or_travel = request.getParameter("business_or_travel");

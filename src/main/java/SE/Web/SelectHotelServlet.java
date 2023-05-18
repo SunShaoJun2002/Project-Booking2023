@@ -25,7 +25,6 @@ public class SelectHotelServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================SelectHotelServlet.begin=========================================");
-        StringTools.setHashMap();
 
         Integer[] selectFacility = StringTools.valuesOf(request.getParameterValues("selectFacility"));
         Integer[] selectStarRating = StringTools.valuesOf(request.getParameterValues("selectStarRating"));
@@ -128,7 +127,7 @@ public class SelectHotelServlet extends HttpServlet {
         Integer totalNumOfHotels = infoList.size();
 
         List<Info> hotelList = new ArrayList<>();
-        for (int i = 0; i != 25 && i < infoList.size(); ++i)
+        for (int i = 0; i != 25; ++i)
         {
             Info info = infoList.get(i);
             List<Room> rooms = roomMapper.selectById(info.getId());

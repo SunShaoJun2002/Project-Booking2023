@@ -215,7 +215,7 @@
         <div>
             <div class="ec230417cd hero-banner-wrapper b36dba3aaa f59f515b3e"><img class="e330f8a8da"
                                                                                    alt="三口之家坐在海边欢笑"
-                                                                                   src="./imgs/family.jpeg"
+                                                                                   src="./img/family.jpeg"
                                                                                    data-testid="herobanner-image"/>
                 <div class="e71072e29c">
                     <div class="d7157e0865">
@@ -280,7 +280,7 @@
                         </div>
                         <div class="f9cf783bde">
                             <div class="d67edddcf0" tabindex="-1">
-                                    <input type="number" name="adult_num" class="adult_num" id="adult_num" min="0" max="30" value="2"
+                                    <input type="number" name="adult_num" class="adult_num" id="adult_num" min="1" max="30" value="2"
                                            style="width:30px; height:20px;" oninput="this.value=this.value.replace(/\D/g);"/>
                                     位成人 ·
                                     <input type="number" name="child_num" class="child_num" id="child_num" min="0" max="10" value="0"
@@ -352,7 +352,53 @@
             </svg>
             <div data-capla-component="b-index-lp-web-mfe/GeniusSignInSheet"
                  data-capla-namespace="b-index-lp-web-mfecaRNVfLS"></div>
-            
+            <div data-capla-component="b-index-lp-web-mfe/GlobalAlerts"
+                 data-capla-namespace="b-index-lp-web-mfecaRNVfLS">
+                <div style="margin:0 0 30px;padding:0 6px">
+                    <div class="a1b3f50dcd e6f05e293e f7c6687c3d">
+                        <div data-testid="web-shell-global-alert"
+                             class="a826ba81c4 c793593141 fa2f36ad22 afd256fc79 d08f526e0d ed11e24d01">
+                            <div data-testid="global-alert-interactive-title" role="button" tabindex="0"
+                                 class="fc63351294 fc2f2c0da8">
+                                <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643 d19ba76520 d840541ba4">
+                                    <span data-testid="global-alert-decoration-icon" class="b6dc9a9e69 ec1b6253a6 bc1a6fdaa5" aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M14.25 15.75h-.75a.75.75 0 0 1-.75-.75v-3.75a1.5 1.5 0 0 0-1.5-1.5h-.75a.75.75 0 0 0 0 1.5h.75V15a2.25 2.25 0 0 0 2.25 2.25h.75a.75.75 0 0 0 0-1.5zM11.625 6a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"></path>
+                                    </svg>
+                                    </span>
+                                    <div class="b1e6dd8416 aacd9d0b0a">
+                                        <div data-testid="global-alert-title" class="f9afbb0024">
+                                            新冠肺炎（COVID-19）疫情帮助
+                                        </div>
+                                    </div>
+                                    <span data-testid="global-alert-icon-expand" class="b6dc9a9e69 ec1b6253a6" aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M6 14.55a.74.74 0 0 1 .22-.55l5-5c.21-.2.49-.309.78-.3a1.1 1.1 0 0 1 .78.32l5 5a.75.75 0 0 1 0 1.06.74.74 0 0 1-1.06 0L12 10.36l-4.72 4.72a.74.74 0 0 1-1.06 0 .73.73 0 0 1-.22-.53zm5.72-4.47zm.57 0z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="a1b3f50dcd a1f3ecff04 f7c6687c3d f522a8d44b">
+                                <div data-testid="global-alert-content" class="db29ecfbe2 dc625444ef">
+                                    获取所需建议。出行前查看最新新冠肺炎（COVID-19）相关限制。
+                                </div>
+                                <div class="">
+                                    <div data-testid="global-alert-links" class="a1b3f50dcd e6f05e293e b2fe1a41c3">
+                                        <a
+                                            ariaLabel="[object Object]" target="_blank"
+                                            aria-label="查看最新新冠肺炎（COVID-19）旅行限制"
+                                            data-testid="global-alert-link"
+                                            href=""
+                                            class="fc63351294 a168c6f285 a25b1d9e47">
+                                        <span>了解详情</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div data-capla-component="b-index-lp-web-mfe/empty"
                  data-capla-namespace="b-index-lp-web-mfecaRNVfLS"></div>
             <div
@@ -375,49 +421,83 @@
                 >
                     <div data-capla-component="b-index-lp-web-mfe/BHAwarenessBanner"
                          data-capla-namespace="b-index-lp-web-mfecaRNVfLS">
-                        
+                        <div>
+                            <div data-testid="wcu_bh_banner-desktop"
+                                 class="a826ba81c4 fa71cba65b fa2f36ad22 afd256fc79 d08f526e0d ed11e24d01 ef9845d4b3 bc4e2c467a">
+                                <a target="_isblank"
+                                   href=""
+                                   class="fc63351294 b8e920e088">
+                                    <div class="d39c27f89b"></div>
+                                    <div class="d875fc0c4c">
+                                        <div data-testid="wcu_bh_banner_desktop--content" class="e1f827110f bb44aa69aa">
+                                            <div><span>为下次旅程寻找</span>
+                                                <div class="de7f9979e1">
+                                                    <ul class="a2172b8d6f">
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">公寓</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">别墅</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">公寓式酒店</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">度假屋</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">乡村别墅</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">民宿短租</span></li>
+                                                        <li class="db46cc1a0a"><span class="fc7d18e9e4">公寓</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <span></span></div>
+                                        <span data-testid="wcu_bh_banner_desktop--button"
+                                              class="fc63351294 a822bdf511 e2b4ffd73d f7db01295e c334e6f658 a9a04704ee ccbae5d425"><span
+                                                class="e57ffa4eb5">查找民宿短租</span></span></div>
+                                    <div class="a0670806ef">
+                                        <picture class="e4e8d3238b"><img class="c3194e6c89 e5eb7fb6cb"
+                                                                         src="./img/look_for.png"
+                                                                         role="presentation" loading="lazy"/>
+                                        </picture>
+                                    </div>
+                                </a></div>
+                        </div>
                     </div>
                 </div>
                 <div data-qmab-component-id="1">
                     <div data-capla-component="b-index-lp-web-mfe/DestinationPostcardsDesktop"
                          data-capla-namespace="b-index-lp-web-mfecaRNVfLS">
                         <div class="f395e522bd" data-testid="destination-postcards-firstrow" role="none">
-                            <a class="fc63351294 d412802652">
+                            <a href=""
+                               class="fc63351294 d412802652">
                             <div style="--bui_aspect_ratio_width--s:100%;--bui_aspect_ratio_padding-top--s:50%"
                                  class="d57f52f47d">
                                 <div class="da627785d6">
                                     <div class="bcc2c1529b">
                                         <div class="d65598d5f9" data-testid="destination-postcard--1456928">
                                             <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643">
-                                                <div class="e1f827110f">总统套房</div>
+                                                <div class="e1f827110f">巴黎</div>
                                                 <picture class="e4e8d3238b fb913c0ee7"
                                                          style="--bui_image_width--s:24px"></picture>
                                             </div>
                                         </div>
                                         <picture class="e4e8d3238b">
                                             <img class="c3194e6c89 e5eb7fb6cb"
-                                                 src="./imgs/image/0_3.jpg"
+                                                 src="./img/paris.jpg"
                                                  role="presentation" loading="lazy"/>
                                         </picture>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                            <a class="fc63351294 d412802652">
+                            <a href="" class="fc63351294 d412802652">
                             <div style="--bui_aspect_ratio_width--s:100%;--bui_aspect_ratio_padding-top--s:50%"
                                  class="d57f52f47d">
                                 <div class="da627785d6">
                                     <div class="bcc2c1529b">
                                         <div class="d65598d5f9" data-testid="destination-postcard--3414440">
                                             <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643">
-                                                <div class="e1f827110f">家庭房</div>
+                                                <div class="e1f827110f">曼谷</div>
                                                 <picture class="e4e8d3238b fb913c0ee7"
                                                          style="--bui_image_width--s:24px"></picture>
                                             </div>
                                         </div>
                                         <picture class="e4e8d3238b">
                                             <img class="c3194e6c89 e5eb7fb6cb"
-                                                 src="./imgs/image/0_1.jpg"
+                                                 src="./img/bangkok.jpg"
                                                  role="presentation" loading="lazy"/>
                                         </picture>
                                     </div>
@@ -426,63 +506,63 @@
                             </a>
                         </div>
                         <div class="f395e522bd af0c2122fa" data-testid="destination-postcards-secondrow">
-                            <a class="fc63351294 d412802652">
+                            <a href="" class="fc63351294 d412802652">
                             <div style="--bui_aspect_ratio_width--s:100%;--bui_aspect_ratio_padding-top--s:75%"
                                  class="d57f52f47d">
                                 <div class="da627785d6">
                                     <div class="bcc2c1529b">
                                         <div class="d65598d5f9" data-testid="destination-postcard--1353149">
                                             <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643">
-                                                <div class="e1f827110f">豪华双床房</div>
+                                                <div class="e1f827110f">香港</div>
                                                 <picture class="e4e8d3238b fb913c0ee7"
                                                          style="--bui_image_width--s:24px"></picture>
                                             </div>
                                         </div>
                                         <picture class="e4e8d3238b">
                                             <img class="c3194e6c89 e5eb7fb6cb"
-                                                 src="./imgs/image/0_2.jpg"
+                                                 src="./img/hongkong.jpg"
                                                  role="presentation" loading="lazy"/>
                                         </picture>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                            <a  class="fc63351294 d412802652">
+                            <a href="" class="fc63351294 d412802652">
                             <div style="--bui_aspect_ratio_width--s:100%;--bui_aspect_ratio_padding-top--s:75%"
                                  class="d57f52f47d">
                                 <div class="da627785d6">
                                     <div class="bcc2c1529b">
                                         <div class="d65598d5f9" data-testid="destination-postcard--246227">
                                             <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643">
-                                                <div class="e1f827110f">花园洋房</div>
+                                                <div class="e1f827110f">东京</div>
                                                 <picture class="e4e8d3238b fb913c0ee7"
                                                          style="--bui_image_width--s:24px"></picture>
                                             </div>
                                         </div>
                                         <picture class="e4e8d3238b">
                                             <img class="c3194e6c89 e5eb7fb6cb"
-                                                 src="./imgs/image/0_4.jpg"
+                                                 src="./img/tokyo.jpg"
                                                  role="presentation" loading="lazy"/>
                                         </picture>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                            <a class="fc63351294 d412802652">
+                            <a href="" class="fc63351294 d412802652">
                             <div style="--bui_aspect_ratio_width--s:100%;--bui_aspect_ratio_padding-top--s:75%"
                                  class="d57f52f47d">
                                 <div class="da627785d6">
                                     <div class="bcc2c1529b">
                                         <div class="d65598d5f9" data-testid="destination-postcard--126693">
                                             <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 db7f07f643">
-                                                <div class="e1f827110f">客栈</div>
+                                                <div class="e1f827110f">罗马</div>
                                                 <picture class="e4e8d3238b fb913c0ee7"
                                                          style="--bui_image_width--s:24px"></picture>
                                             </div>
                                         </div>
                                         <picture class="e4e8d3238b">
                                             <img class="c3194e6c89 e5eb7fb6cb"
-                                                 src="./imgs/image/1_1.jpg"
+                                                 src="./img/rome.jpg"
                                                  role="presentation" loading="lazy"/>
                                         </picture>
                                     </div>
@@ -507,7 +587,38 @@
                     </div>
                 </div>
                 <div data-et-view="HVUBNLOLOLOVZMYCdGUKCMeMGaFNRdScTaTIYDINFPIWBHT:2"></div>
-                
+                <div data-capla-component="b-index-lp-web-mfe/GeniusSignInBanner"
+                     data-capla-namespace="b-index-lp-web-mfecaRNVfLS">
+                    <div class="a8587b2c3c" data-qmab-component-id="36">
+                        <div>
+                            <div class="a826ba81c4 fe821aea6c fa2f36ad22 afd256fc79 d08f526e0d ed11e24d01 ef9845d4b3 bd09386e88">
+                                <div style="--bui_aspect_ratio_padding-top--s:100%" class="d57f52f47d c9ad251439">
+                                    <div class="da627785d6">
+                                        <div class="bcc2c1529b">
+                                            <picture class="e4e8d3238b"><img class="c3194e6c89 e5eb7fb6cb"
+                                                                             src="https://t-cf.bstatic.com/design-assets/assets/v3.68.0/illustrations-traveller/GlobeGeniusBadge.png"
+                                                                             srcSet="https://t-cf.bstatic.com/design-assets/assets/v3.68.0/illustrations-traveller/GlobeGeniusBadge@2x.png 2x"
+                                                                             alt="" role="presentation" loading="lazy"/>
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c27180cdd7"><h2 class="e1f827110f db764d8fd9">获取即时优惠</h2>
+                                    <div class="a0c113411d e7dbab4567">
+                                        只需登录你的Booking.com帐号，寻找蓝色Genius标识即可省钱
+                                    </div>
+                                </div>
+                                <div class="a1b3f50dcd a1f3ecff04 b2fe1a41c3 f99e477b40"><a
+                                        href="./script/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
+                                        class="fc63351294 a822bdf511 e2b4ffd73d f7db01295e c334e6f658 a9a04704ee"><span
+                                        class="e57ffa4eb5">登录</span></a><a
+                                        href="./script/index.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&amp;login_redirect=https%3A%2F%2Fwww.booking.com%2Findex.zh-cn.html"
+                                        class="fc63351294 a822bdf511 e3c025e003 f7db01295e c334e6f658 e1b7cfea84"><span
+                                        class="e57ffa4eb5">注册</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div data-et-view="customGoal:cCGaYSdMbYSfcdReLbFZVGAZbaTaTaET:1"></div>
                 <div data-capla-component="b-index-lp-web-mfe/UniqueStaysProperties"
                      data-capla-namespace="b-index-lp-web-mfecaRNVfLS">
@@ -528,17 +639,808 @@
                     <div data-qmab-component-id="4"></div>
                 </div>
                 <div data-et-view=" cCHObONdPbABJRXTcXCEFRURURHe:1 customGoal:cCHObONdPbABJRXTcXCEFRURURHe:2  cCHObONdPbABJRXTcXCEFRURURHe:3    cCHObONdPbABJRXTcXCEFRURURHe:4   "></div>
-               
+                <div
+                        class="bui-spacer--largest"
+                        data-qmab-component-id="3"
+                >
+                    <h2 class="bui-f-font-display_two bui-spacer--large d-index__header-section travel_articles_header__section">
+                        精彩下一站，灵感这里找
+                        <a class="bui-link bui-link--primary travel_articles__link">更多</a>
+                    </h2>
+                    <div
+                            role="region"
+                            class="bui-carousel bui-carousel--large bui-u-bleed@small"
+                            data-bui-component="Carousel"
+                    >
+                        <ul class="bui-carousel__inner" data-bui-ref="carousel-container">
+                            <li
+                                    class="travel_articles_item bui-carousel__item"
+                                    data-bui-ref="carousel-item"
+                                    data-et-click="customGoal:cCHObONdPbABJRXTcXCEFRURURHe:1"
+                            >
+                                <a aria-labelledby="travel_articles_title_1" aria-describedby="travel_articles_desc_1"
+                                   class="travel_articles  ">
+                                    <div class="travel_articles_img">
+                                        <img src="./img/japan.png">
+                                    </div>
+                                    <div class="travel_articles__overlay"></div>
+                                    <div class="travel_articles__content">
+                                        <h3 class="travel_articles__header travel_articles__two_line"
+                                            id="travel_articles_title_1">日本7大美不胜收的春日赏花胜地
+                                        </h3>
+                                        <p id="travel_articles_desc_1"
+                                           class="travel_articles__description travel_articles__two_line">
+                                            富士山脚下的芝樱花海、令人惊叹的160岁紫藤树，这个春日徜徉花的世界。
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li
+                                    class="travel_articles_item bui-carousel__item"
+                                    data-bui-ref="carousel-item"
+                                    data-et-click="customGoal:cCHObONdPbABJRXTcXCEFRURURHe:1"
+                            >
+                                <a class="bui-card bui-card--media bui-card--transparent">
+                                    <div class="bui-card__image-container travel_articles_img_small">
+                                        <img class="bui-card__image"
+                                             src="./img/australia.webp"/>
+                                    </div>
+                                    <div class="bui-card__content">
+                                        <div class="bui-title bui-title--strong_1 bui-card__title">
+                                            <span class="bui-card__title travel_articles__two_line">
+                                                &#x6FB3;&#x5927;&#x5229;&#x4E9A;&#x9002;&#x5408;&#x5BB6;&#x5EAD;&#x51FA;&#x6E38;&#x7684;&#x4E94;&#x5927;&#x516C;&#x8DEF;&#x6E38;&#x8DEF;&#x7EBF;
+                                            </span>
+                                            <span class="bui-title__subtitle travel_articles__two_line">
+                                                冲浪、美丽海滩、美食、冒险，应有尽有。
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li
+                                    class="travel_articles_item bui-carousel__item"
+                                    data-bui-ref="carousel-item"
+                                    data-et-click="customGoal:cCHObONdPbABJRXTcXCEFRURURHe:1"
+                            >
+                                <a class="bui-card bui-card--media bui-card--transparent">
+                                    <div class="bui-card__image-container travel_articles_img_small">
+                                        <img class="bui-card__image" src="./img/thailand.webp"/>
+                                    </div>
+                                    <div class="bui-card__content">
+                                        <div class="bui-title bui-title--strong_1 bui-card__title">
+                                            <span class="bui-card__title travel_articles__two_line">
+                                                8&#x5927;&#x5E86;&#x795D;&#x6CF0;&#x56FD;&#x6CFC;&#x6C34;&#x8282;&#x7684;&#x80DC;&#x5730;
+                                            </span>
+                                            <span class="bui-title__subtitle travel_articles__two_line">沉浸式感受泰国最重要的节日，加入世界上最大的水仗。</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                           
+    </div> <!-- lp-general_content_wrapper -->
+</div>
 </div>
 <div class="slinks">
     <div class="clearfix"></div>
-    
+    <div
+            class="wcu-seo-tabs d-index__section bui-spacer--largest index clearfix a11y_blue_grey"
+            data-component="in-and-around-swap-tab"
+            data-et-view="  customGoal:cCHObTULHfAFFQZcXCEFRURURHe:1  "
+            data-et-click="customGoal:cCHObTRVDEZRdPQBcGCfTKYCcaYO:5
+goal:www_seo_click
+"
+    >
+        <h2 class="bui-f-font-display_two bui-spacer--large d-index__header-section">&#x70ED;&#x95E8;&#x76EE;&#x7684;&#x5730;</h2>
+        <nav class="bui-tab bui-tab--rounded bui-spacer--large" data-component="seo-index-destinations-tabs">
+            <ul class="bui-tab__nav" role="tablist" data-bui-ref="tab-items">
+                <li class="bui-tab__item" role="presentation" data-bui-ref="tab-item">
+                    <button class="bui-tab__link bui-tab__link--selected" data-bui-ref="tab-button" data-tab-id="0"
+                            role="tab" aria-selected="true">
+                        <span class="bui-tab__text" data-bui-ref="tab-text">区域</span>
+                    </button>
+                </li>
+                
+            </ul>
+            <script>
+            window.onload = function(){
+	                obj = document.getElementById("section_ul").getElementsByTagName("a");
+	                for(i in obj){
+		                obj[i].href = "";
+	                }
+            }
+            </script>
+            <div class="bui-tab__content bui-tab__content--selected" role="tabpanel" data-bui-ref="tab-content"
+                 data-tab-id="0">
+                <ul class="ia_section-container clearfix wcu-seo-regions-poi" id="section_ul">
+                    <li class=" ia_section_item  fl " >
+                        <a class="ia_link"
+                           href="">
+                           富士山
+                        </a>
+                        <span class="ia_hotelnum">548家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl " >
+                        <a class="ia_link"
+                           href="">
+                            甲米府
+                        </a>
+                        <span class="ia_hotelnum">1,661家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/mv/maldives.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            马尔代夫
+                        </a>
+                        <span class="ia_hotelnum">807家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/th/phuket.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            普吉府
+                        </a>
+                        <span class="ia_hotelnum">5,495家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  last  fl ">
+                        <a class="ia_link"
+                           href="/region/my/langkawi.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            兰卡威
+                        </a>
+                        <span class="ia_hotelnum">656家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/tw/new-taipei-city.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            新北市
+                        </a>
+                        <span class="ia_hotelnum">387家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/th/bangkok.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            曼谷
+                        </a>
+                        <span class="ia_hotelnum">4,597家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/cn/hainan.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            海南
+                        </a>
+                        <span class="ia_hotelnum">761家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/th/koh-samui.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            苏梅岛
+                        </a>
+                        <span class="ia_hotelnum">2,211家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  last  fl ">
+                        <a class="ia_link"
+                           href="/region/cn/xizang.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            西藏
+                        </a>
+                        <span class="ia_hotelnum">93家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/au/australian-capital-territory.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            澳大利亚首都直辖区
+                        </a>
+                        <span class="ia_hotelnum">233家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/my/penang.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            槟城州
+                        </a>
+                        <span class="ia_hotelnum">2,007家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/hk/lantau.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            大屿山
+                        </a>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/tw/tainan.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            台南地区
+                        </a>
+                        <span class="ia_hotelnum">825家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  last  fl ">
+                        <a class="ia_link"
+                           href="/region/cn/xishuangbanna.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            西双版纳
+                        </a>
+                        <span class="ia_hotelnum">80家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/my/cameron-highlands.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            金马仑高原
+                        </a>
+                        <span class="ia_hotelnum">616家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/id/batam.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            巴淡岛
+                        </a>
+                        <span class="ia_hotelnum">350家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/ph/bohol.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            薄荷岛
+                        </a>
+                        <span class="ia_hotelnum">764家住宿</span>
+                    </li>
+                    <li class=" ia_section_item  fl ">
+                        <a class="ia_link"
+                           href="/region/id/bali.zh-cn.html?aid=397645&label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB&sid=f0f82b20b46106bf73b9641ed765ee02">
+                            巴厘岛
+                        </a>
+                        <span class="ia_hotelnum">12,680家住宿</span>
+                    </li>
+                </ul>
+            </div>
+         
+        </nav>
+    </div>
     <div class="clearfix"></div>
 </div>
+<div
+        id="footer_menu_track"
+        class="footerconstraint cnd-onview-anchor footer_no_lang_track a11y_fix_footer_contrast_footerconstraint "
+        role="contentinfo"
+        data-et-view="goal:www_index_full_page_scroll"
+>
+    <div id="newsletter_form_footer_container"
+         class="newsletter_subscribe_with_sprites "
+         role="region"
+         aria-label="订阅我们的电子报以获取优惠信息 - 页脚"
+         data-emk-subscription-success-remove
+         data-et-click="customGoal:cCHObTRVDEZRdPQBcGCfTKYCcZeKe:5">
+        <form action=""
+              method="post"
+              name="newsletterform"
+              id="emk-footer"
+              class="footerForm emk-subscription-entry-point "
+              data-component="emk/subscription-entry-point emk/subscription-entry-point-feedback-msg"
+              data-emk-entry-point-label="footer">
+            <input type="hidden" name="aid" value="397645"/>
+            <input type="hidden" name="label"
+                   value="bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB"/>
+            <input type="hidden" name="sid" value="f0f82b20b46106bf73b9641ed765ee02"/>
+            <input type="hidden" name="url" value=""/>
+            <input type="hidden" name="hostname" value="www.booking.com"/>
+            <input type="hidden" name="companyname" value="Booking.com"/>
+            <input type="hidden" name="aid" value="397645" data-ajax-submit/>
+            <input type="hidden" name="label"
+                   value="bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AvW-8KEGwAIB0gIkODM0MjcwZjAtZjY5Ni00MGU0LWEyMWMtYjNhZWUwOTk4MGI12AIE4AIB"
+                   data-ajax-submit/>
+            <input type="hidden" name="endpoint_url"
+                   value=""/>
+            <input type="hidden" name="error_url"
+                   value=""/>
+            <input type="hidden" name="subscribe_source" value="footer_index" data-ajax-submit/>
+            <input type="hidden" name="opt_in" value="1" data-ajax-submit/>
+            <div class="emk_footer_update emk_footer_centered emk_footer_update_space ">
+                <div class="footerconstraint-inner">
+                    <div class="cs_contact_footer">
+                        <div class="cs_contact_footer_icon">
+                            <i class="cs_contact_footer_phone_icon"></i>
+                        </div>
+                        <div class="cs_contact_footer_title">
+                            <h3 class="cs_contact_footer_title_header">24小时客服助您安心出行</h3>
+                            <p class="cs_contact_footer_title_subheader">订单有问题？我们来帮您！</p>
+                        </div>
+                        <div class="cs_contact_footer_numbers">
+                            <div class="cs_contact_footer_numbers_section domestic_international_line">
+                                <p class="number_title">中文客服热线</p>
+                                <p class="number_content">
+                                    <a class="number_content" target="_blank">
+                                        点击了解更多客服帮助
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="cs_contact_footer_numbers_section help_center">
+                                <p class="number_title">常见问题</p>
+                                <p class="number_content">去<a target="_blank" class="number_content">帮助中心</a>看看</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emk_footer_wrapper">
+                        <div class="emk_footer_banner_block">
+                            <h2>方便又省钱！</h2>
+                        </div>
+                        <div class="emk_footer_subbanner_block">
+                            立即注册，获取优惠好价！
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="emk_footer_form_layout">
+                            <label for="newsletter_to" class="invisible_spoken">
+                                输入你的电子邮箱，我们将向你发送最佳优惠折扣
+                            </label>
+                            <div class="subscription_form_wrap">
+                                <input type="email" name="to" autocapitalize="off" required="true"
+                                       id="newsletter_to"
+                                       class="input_newsletter_subscription_to"
+                                       placeholder="您的电邮地址"
+                                       title=""
+                                       value=""
+                                       data-ajax-submit/>
+                                <button id="newsletter_button_footer"
+                                        data-et-click="goal:www_subscribe_deals_footer_button_click">
+                                    订阅
+                                </button>
+                            </div>
+                            <div data-et-view="dLYHMRFeRQcDaIPaMNfQCcbNXGDJae:1"></div>
+                        </div>
+                        <p class="emk-feedback-msg use_sprites_no_back -invalid" role="alert" aria-live="assertive">
+                            <span class="bicon-close" aria-hidden="true"></span>
+                            <span class="invisible_spoken">错误：</span>
+                            请输入有效电邮
+                        </p>
+                        <p class="emk-feedback-msg use_sprites_no_back -error" role="alert" aria-live="assertive">
+                            <span class="bicon-close" aria-hidden="true"></span>
+                            <span class="invisible_spoken">错误：</span>
+                            抱歉，网页出现错误！
+                        </p>
+                        <p class="emk-feedback-msg use_sprites_no_back -success" role="status" aria-live="assertive">
+                            <span class="bicon-checkyes" aria-hidden="true"></span>
+                            谢谢！我们已向你发送电子邮件，你可以通过邮件完成订阅
+                        </p>
+                    </div>
+                </div>
+                <input name="recaptcha_enabled" value="1" type="hidden" data-ajax-submit>
+                <script nonce="4DwZSPUvFd8eOkZ">
+window.onLoadRecaptchaV3Callback = function() {
+grecaptcha.ready(function() {
+grecaptcha.execute('6LfzopcUAAAAAPh4ue2iRjzP6XdxDVpwJigtlmeD', {action: 'index'}).then(function(token) {
+var target = $('[data-component*="emk/subscription-entry-point"]');
+target.append("<input type=hidden name=recaptcha_token value=" + token +" data-ajax-submit>");
+target.closest('form').submit(function() {
+$('.grecaptcha-badge').show().css('visibility', 'visible');
+});
+});
+});
+};
 
+
+                </script>
+                <style nonce="4DwZSPUvFd8eOkZ">.grecaptcha-badge { display: none; bottom: 90px !important; }</style>
+                <div data-component="core/recaptcha/v3" data-key="6LfzopcUAAAAAPh4ue2iRjzP6XdxDVpwJigtlmeD"
+                     data-onload="onLoadRecaptchaV3Callback"
+                     data-delay-load="load">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="booking-footer" class="footer-wrapper">
+        <div id="footer_top_menu" class="footer-top-menu">
+            <div class="footer-top-partners clearfix js-footer-top-menu">
+                <div class="footerconstraint-inner clearfix">
+                    <div id="footertopnav-partners" role="navigation">
+                        <p class="footer-top-partner-text footer-top-partner-buttons">
+                            <a ref="nofollow"
+                               target="_blank"
+                               data-ga-track="click|pageview:/internallink/partner/footer/hotellink/index/zh-cn"
+                               data-et-click="customGoal:cCHObTRVDEZRdPQBcGCfTKYCcZeKe:4 goal:www_list_proproperty_footer_click"
+                               data-et-view="HCZEZUaNZIUONSFTUQODZEYTYeYINXGET:1"
+                               class="footer-top-button"
+                               data-qa="joinapp_ep">
+                                &#x4E0A;&#x7EBF;&#x6211;&#x7684;&#x4F4F;&#x5BBF;
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerconstraint-inner clearfix">
+                <div id="footertopnav" role="navigation">
+                    <ul class="footer-top-links-list">
+                        <li class="footer-top-link">
+                            <a rel="nofollow">手机版视图</a>
+                        </li>
+                        <li class="footer-top-link">
+                            <a>
+                                您的帐户
+                            </a>
+                        </li>
+                        <li class="footer-top-link">
+                            <a class="manage"
+                               class="tracked">
+                                在线修改订单
+                            </a>
+                        </li>
+                        <li class="footer-top-link"
+                            data-ga-track="click|CSIR|CS|footer_top_customer_service_help">
+                            <a class="cuca"
+                               data-ga-track="click|Click|Action: index|hc_entrypoint_blue_footer"
+                               data-bui-component="Tooltip"
+                               title="您的参考编号是 &ldquo;F0F82B2&rdquo;">
+                                客服帮助
+                            </a>
+                        </li>
+                        <script nonce="4DwZSPUvFd8eOkZ">
+document.querySelector('.cuca').addEventListener('blur', function() {
+window.BUI.getInstance(this, 'Tooltip').hide();
+})
+
+
+                        </script>
+                        <li class="footer-top-link">
+                            <a data-bui-component="Tooltip" title="成为分销合作伙伴" class="footer_become_affiliate"
+                               data-ga-track="click|pageview:/internallink/partner/footer/affiliatelink/index/zh-cn">
+                                成为分销合作伙伴
+                            </a>
+                            <script nonce="4DwZSPUvFd8eOkZ">
+document.querySelector('.footer_become_affiliate').addEventListener('blur', function() {
+window.BUI.getInstance(this, 'Tooltip').hide();
+})
+
+
+                            </script>
+                        </li>
+                        <li class="footer-top-link">
+                            <a class="tracked"
+                               data-google-track="Click/Action: index/BBTool Footer BBZ">Booking.com商旅服务</a>
+                        </li>
+                        <li class="footer-top-link footer-top-link--last china_gtw_footer_menu">
+                            <a href="#" class="jq_tooltip"
+                               data-title="关注Booking.com官方微信号"
+                               data-node_tt_id="china_gtw_header_hover"
+                               data-tooltip-class="gtw_header_tooltip"
+                               id="china_gtw_header_cta">
+                                关注Booking.com官方微信号
+                                <img width="25px"
+                                     src="./img/wechat.png"
+                                     alt="关注Booking.com官方微信号"/>
+                            </a>
+                            <div id="china_gtw_header_hover" style="display:none">
+                                <div style="text-align: center; width: 180px;padding: 10px;">
+                                    <span>关注Booking.com官方微信号</span>
+                                    <br>
+                                    <!--<img width="150px"
+                                         src="./script/static/img/desktop_footer_WOA/da4aea624f2026b3e6826d56e4a2555f67e8df89.jpg"
+                                         alt="关注Booking.com官方微信号"/>-->
+                                    <br>
+                                    <span>全球特价酒店应有尽有！</span>
+                                </div>
+                                <script nonce="4DwZSPUvFd8eOkZ">
+document.getElementById('china_gtw_header_cta').addEventListener('click', function(e) {e.preventDefault();})
+                                </script>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerconstraint-inner">
+            <div id="footer" class="footer-navigation-links-wrapper clearfix" role="navigation">
+                <div id="footer_links" class="footer-navigation-links">
+                    <div class="footer-navigation-links-column footer-seo-links-to-html-sitemaps">
+                        <ul class="footer-navigation-links-list">
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    国家&#47;地区
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    区域
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    城市
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    区
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    机场
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    酒店
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a data-ga="seoindexlinks">
+                                    周边地标&#47;景点
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation-links-column">
+                        <ul class="footer-navigation-links-list footer-seo-links-to-index">
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="booking-home">
+                                    民宿短租
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="apartments">
+                                    公寓
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="resorts">
+                                    度假村
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="villas">
+                                    别墅
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="hostels">
+                                    青旅
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="bed_and_breakfast">
+                                    住宿加早餐旅馆
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="guest_house">
+                                    旅馆
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation-links-column">
+                        <ul class="footer-navigation-links-list">
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="accommodations">
+                                    全球独特住宿
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="destinations">
+                                    所有目的地
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="flights_destinations">
+                                    所有航班目的地
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="cars_destinations">
+                                    所有租车点
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    发现精彩
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="" data-ga="seoindexlinks" class="js-reviews-footer-link">
+                                    客人点评
+                                </a>
+                            </li>
+                            <div data-et-view="  BHDTJdReLLCBLZBeMbFMOFIbeDUHYKe:1 BHDTJdReLLCBLZBeMbFMOFIbeDUHYKe:3 "></div>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga="extended-stays">
+                                    探索月租
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   type="nav" location="main-site-footer" category="articles-link">
+                                    游记攻略
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   title="季节和假日优惠">
+                                    季节和假日优惠
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    Traveller Review Awards
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation-links-column">
+                        <ul class="footer-navigation-links-list">
+                            <li class="footer-navigation-link">
+                                <a rel="nofollow"
+                                   href=""
+                                   target="_blank"
+                                   data-google-track="Click/Rental cars footer link click (loy_footer_rentalcars_copy: 0)/index"
+                                   data-ga-track="click|pageview:/outgoinglink/traveljigsaw/zh">
+                                    租车服务
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a rel="nofollow"
+                                   href=""
+                                   target="_blank"
+                                   data-google-track="Click/Kayak footer link/index"
+                                   data-ga-track="click|pageview:/outgoinglink/kayaklink">
+                                    订机票
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a rel="nofollow" href="" target="_blank"
+                                   data-google-track="Click/Opentable footer link/index"
+                                   data-ga-track="click|pageview:/outgoinglink/opentablelink">
+                                    餐厅订位
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="" title="Booking.com for Travel Advisers"
+                                   data-ga-track="click|pageview:/internallink/partner/footer/adviserslink/index/zh-cn">
+                                    Booking.com旅行代理机构中心
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation-links-column">
+                        <ul class="footer-navigation-links-list">
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    新冠肺炎（COVID-19）疫情常见问题及解答
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">关于Booking.com</a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga-track="click|Click|Action: index|hc_entrypoint_footer_navigation">
+                                    客服帮助
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    酒店自助平台
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga-track="click|pageview:/outgoinglink/footer/careerlink/zh-cn">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   data-ga-track="click|pageview:/outgoinglink/footer/sustainabilitylink/zh-cn">
+                                    可持续发展项目
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a class="tracked" data-google-track="Click/Action: about_us/press"
+                                   href="">
+                                    新闻中心
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href=""
+                                   class="tracked">
+                                    安全旅行信息中心
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a class="tracked" data-google-track="Click/Action: about_us/investor_relations"
+                                   href="">
+                                    投资者关系
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    条款与条件
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    合作伙伴申诉
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    我们如何运作
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">
+                                    隐私和Cookie声明
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <div style="display:none">
+                                    <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
+                                </div>
+                                <a href="#" class=" ot-preference-center-footer">
+                                    管理Cookie设置
+                                </a>
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="#"
+                                   id="pipl-personalization-footer-btn"
+                                   data-modal-id="personalization-modal"
+                                   data-bui-component="Modal"
+                                   data-et-click="customGoal:YTBeWfCDIXLSGbDaFSRfABNIPRaO:1"
+                                   data-modal-keep-mounted="true"
+                                   data-modal-close-aria-label="关闭">
+                                    个性化推荐
+                                </a>
+                                <template id="personalization-modal">
+                                    <div class="bui-modal__body bui-modal__body--primary">
+                                        <p style="margin-top: 24px">
+                                            开启此项功能后，您将可以看到与您相关的搜索结果，以提升您的浏览体验。如关闭此功能，您看到的将是基于点评分数以及低价的搜索结果。
+                                        </p>
+                                        <div class="bui-switch">
+                                            <div class="bui-input-text__content">
+                                                <input type="checkbox"
+                                                       checked="checked"
+                                                       id="personalization-switch-1"
+                                                       class="bui-switch__trigger"
+                                                       aria-label="个性化推荐"
+                                                       aria-checked="true"
+                                                       role="switch"/>
+                                                <label for="personalization-switch-1"
+                                                       aria-hidden="true"
+                                                       class="bui-switch__hitbox"
+                                                       data-on-value="开启"
+                                                       data-off-value="关闭">
+                                                    <span class="bui-switch__indicator"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+
+                                
+                            </li>
+                            <li class="footer-navigation-link">
+                                <a href="">MSA声明</a>
+                            </li>
+                            <li class="footer-navigation-link" data-ga-track="click|CSIR|CS|footer_link_contact_us">
+                                <a href="">其他问题查询</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div role="region" aria-label="即刻下载Booking.com免费应用程序" class="local_info_bot footerconstraint-inner">
             <div class="local_info_bot_inner">
-                
+                <div class="extranet_link_container">
+                    <a class="extranet_link"
+                       href=""
+                       data-ga-track="click|Footer|Click - Extranet login|index">
+                        登录后台
+                    </a>
+                </div>
                 <div class="footercopyright frontpage ">
                     <div class="whitebar">
                         <div class="copyright_text">
@@ -554,7 +1456,64 @@
             <div class="footer__priceline">
                 <p class="footer__priceline__title"> Booking.com隶属于Booking Holdings
                     Inc.，该集团是深受全球用户好评的在线旅行及周边服务供应商。</p>
-                
+                <div class="footer__priceline__list">
+                    <ul>
+                        <li>
+                            <img
+                                    src="./img/booking.png"
+                                    title="Booking.com"
+                                    alt="Booking.com"
+                                    height="26"
+                                    width="91"
+                            >
+                        </li>
+                        <li>
+                            <img
+                                    src="./img/priceline.png"
+                                    title="Priceline"
+                                    alt="Priceline"
+                                    height="26"
+                                    width="91"
+                            >
+                        </li>
+                        <li>
+                            <img
+                                    src="./img/kayak.png"
+                                    title="Kayak"
+                                    alt="Kayak"
+                                    height="26"
+                                    width="79"
+                            >
+                        </li>
+                        <li>
+                            <img
+                                    src="./img/agoda.png"
+                                    title="Agoda"
+                                    alt="Agoda"
+                                    height="26"
+                                    width="70"
+                            >
+                        </li>
+                        <li>
+                            <img
+                                    src="./img/rentalcars.png"
+                                    title="Rentalcars"
+                                    alt="Rentalcars"
+                                    height="26"
+                                    width="109"
+                            >
+                        </li>
+                        <li>
+                            <img
+                                    src="./img/opentable.png"
+                                    title="OpenTable"
+                                    alt="OpenTable"
+                                    height="26"
+                                    width="95"
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

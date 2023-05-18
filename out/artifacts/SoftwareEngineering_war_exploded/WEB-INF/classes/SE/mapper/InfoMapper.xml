@@ -101,9 +101,9 @@
                     and A.room_num>=#{RoomNum})
                     )
                 </when>
-                <when test="RoomNum != null">
+                <when test="RoomDesc != null and RoomNum != null">
                     and id in
-                    (select distinct hotel_id from rooms as A where A.room_num>=#{RoomNum})
+                    (select hotel_id from (select hotel_id,sum(room_num) as n from rooms where usable_desc=#{RoomDesc} group by hotel_id) A where A.n>=#{RoomNum})
                 </when>
             </choose>
         </where>
@@ -149,10 +149,6 @@
                 </when>
             </choose>
         </where>
-    </insert>
-    <insert id="insertAll">
-        insert into testdbconnection (hotel_id)
-        select id as hotel_id from info
     </insert>
 
     <select id="countNum" resultType="java.lang.Integer">
@@ -248,9 +244,6 @@
     </select>
     <select id="selectById" resultType="SE.pojo.Info">
         select * from info where id=#{id}
-    </select>
-    <select id="selectAll" resultType="SE.pojo.Info">
-        select * from info
     </select>
 
 </mapper>
