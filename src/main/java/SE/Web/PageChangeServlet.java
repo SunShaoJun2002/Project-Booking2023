@@ -28,6 +28,7 @@ public class PageChangeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================PageChangeServlet.begin=========================================");
+        StringTools.setHashMap();
 //        long millis1 = System.currentTimeMillis();
 
         Integer pageIndex = Integer.valueOf(request.getParameter("pageIndex"));

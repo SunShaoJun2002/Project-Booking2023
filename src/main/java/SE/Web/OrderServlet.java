@@ -8,6 +8,7 @@ import SE.pojo.*;
 import SE.pojo.Record;
 import SE.util.RecordData;
 import SE.util.StringIter;
+import SE.util.StringTools;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -28,6 +29,7 @@ public class OrderServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================OrderHotelServlet.begin=========================================");
+        StringTools.setHashMap();
 
         String orderRecord = request.getParameter("orderRecord");
         StringIter orders = new StringIter();
@@ -43,6 +45,8 @@ public class OrderServlet extends HttpServlet {
         RoomMapper roomMapper = sqlSession.getMapper(RoomMapper.class);
         FeatureMapper featureMapper = sqlSession.getMapper(FeatureMapper.class);
         RecordMapper recordMapper = sqlSession.getMapper(RecordMapper.class);
+
+        recordMapper.deleteNullRecords();
 
         Record record = new Record();
         record.setRoom_num(1);

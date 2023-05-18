@@ -5,6 +5,7 @@ import SE.mapper.RoomMapper;
 import SE.pojo.Data;
 import SE.pojo.Info;
 import SE.pojo.Room;
+import SE.util.StringTools;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -25,22 +26,34 @@ public class SearchHotelServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================SearchHotelServlet.begin=========================================");
+        StringTools.setHashMap();
+
         long millis1 = System.currentTimeMillis();
 
-        String dest = request.getParameter("dest");
+        String dest_raw = request.getParameter("dest");
+        String dest;
         String check_in_date = request.getParameter("check_in_date");
         String check_out_date = request.getParameter("check_out_date");
         Integer adult_num = Integer.valueOf(request.getParameter("adult_num"));
         Integer child_num = Integer.valueOf(request.getParameter("child_num"));
         Integer room_num = Integer.valueOf(request.getParameter("room_num"));
 
-        if (dest.equals("中国")) dest = null;
-        else dest = "%" + dest + "%";
+        if (dest_raw.equals("中国")) dest = null;
+        else dest = "%" + dest_raw + "%";
 
         String des1 = "位成人, ";
         String des2 = "名儿童";
         String des = adult_num + des1 + child_num + des2;
-        if (child_num == 0) des = adult_num +"位成人";
+        if (child_num == 0)
+        {
+            if (adult_num == 0)
+            {
+                des = null;
+            }
+            else{
+                des = adult_num +"位成人";
+            }
+        }
 
         long millis2 = System.currentTimeMillis();
 
@@ -55,7 +68,14 @@ public class SearchHotelServlet extends HttpServlet {
 
         long millis3 = System.currentTimeMillis();
 
-        List<Info> infos = infoMapper.selectContentHotel(dest, des, room_num, check_in_date, check_out_date);
+        List<Info> infos;
+        if (dest == null && des == null)
+        {
+            infos = infoMapper.selectAll();
+        }
+        else{
+            infos = infoMapper.selectContentHotel(dest, des, room_num, check_in_date, check_out_date);
+        }
 //        System.out.println(infos.size());
 //        for(int i = 0; i != 10; ++i)
 //        {
@@ -67,13 +87,20 @@ public class SearchHotelServlet extends HttpServlet {
 
         infoMapper.deleteAll();
         sqlSession.commit();
-        infoMapper.insertContentHotel(dest, des, room_num, check_in_date, check_out_date);
-        sqlSession.commit();
+
+        if (dest == null && des == null) {
+            infoMapper.insertAll();
+            sqlSession.commit();
+        }
+        else{
+            infoMapper.insertContentHotel(dest, des, room_num, check_in_date, check_out_date);
+            sqlSession.commit();
+        }
 
         long millis5 = System.currentTimeMillis();
 
         List<Info> hotelList = new ArrayList<>();
-        for (int i = 0; i != 25; ++i)
+        for (int i = 0; i != 25 && i < infos.size(); ++i)
         {
             if (i >= infos.size()) break;
             Info info = infos.get(i);
@@ -175,6 +202,7 @@ public class SearchHotelServlet extends HttpServlet {
 //        System.out.println("$PARAM$ hasBreakfastNums: " + hasBreakfastNums);
 //        System.out.println("$PARAM$ ratingNums: " + ratingNums[0] + ", " + ratingNums[1] + ", " + ratingNums[2]);
         System.out.println("$PARAM$ totalNumOfHotels: " + totalNumOfHotels);
+        request.setAttribute("destName", dest_raw);
         request.setAttribute("hotelList", hotelList);
         request.setAttribute("totalNumOfHotels", totalNumOfHotels);
         request.setAttribute("facilityNums", facilityNums);

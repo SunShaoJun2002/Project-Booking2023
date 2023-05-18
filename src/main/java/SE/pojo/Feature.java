@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Feature {
     private Integer id;
     private String facility_list;
-    private HashMap<String,String>facilities_pics;
+    public static HashMap<String,String>facilities_pics;
     private String feature;
     private String breakfast;
     private String single_score_name;

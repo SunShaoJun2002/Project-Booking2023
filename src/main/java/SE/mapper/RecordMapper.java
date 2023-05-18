@@ -15,4 +15,5 @@ public interface RecordMapper {
     List<Record> selectRecordsByPhone(@Param("Phone")String phone);
     List<RecordDetail> selectDetailById(@Param("Id")Integer id);
     List<RecordDetail> selectRecordDetailById(@Param("Id")Integer id);
+    void deleteNullRecords();
 }

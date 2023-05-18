@@ -2012,10 +2012,16 @@ body.header_reshuffle #top {
 									require_receipt.value = "f";
 								}
 								
-								if(document.getElementsByName("email")[0].value == ""){
+								var emailStr = document.getElementsByName("email")[0].value;
+								if(emailStr == ""){
 									window.alert("请输入电子邮箱地址！");
 									return;
 								}
+								if(!emailStr.match(/^\w+@\w+\.\w+$/i)){
+									window.alert("电子邮箱格式错误！");
+									return;
+								}
+								
 								if(document.getElementsByName("nation")[0].value == "") {
 									window.alert("请输入国家！");
 									return;

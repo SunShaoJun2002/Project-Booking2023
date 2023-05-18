@@ -1296,51 +1296,16 @@
 											<div class="c6fa81a947">
 												<div class="b318847947">
 													<div class="ac78a73c96 a29f4f5c93">预订信息都准确吗？</div>
-													<div class="d8eab2cf7f e3e796884e">您随时可以在线查看或更改预订，无需注册!</div>
-													<div class="bc7e7befc9">
-														<div class="c469ed42cb"><span
-																	class="b6dc9a9e69 b46b015725 e25355d3ee"
-																	aria-hidden="true"><i
-																		class="e9a4647ed6 f884cd7286"></i></span><span>
-																	<div class="f9afbb0024 cf9a0fa298">取消您的预订</div>
-																</span></div>
-														<div class="c469ed42cb"><span
-																	class="b6dc9a9e69 b46b015725 e25355d3ee"
-																	aria-hidden="true"><i
-																		class="e9a4647ed6 f5acc92859"></i></span><span>
-																	<div class="f9afbb0024 cf9a0fa298">联系住宿</div>
-																</span></div>
-													</div>
+													<div class="d8eab2cf7f e3e796884e">您随时可以在线查看预订，无需注册!</div>
+													
 												</div>
 											</div>
 										</div>
 										<div class="mybooking-block_ss_legacy_part">
-											<a class="mybooking-block__link cf custom_track"
-												data-trackname="pb_conf_replace_mybooking_widget: Change booking dates"
-												data-et-click=" customGoal:AEAFSXPHAEDXCGHfUOfEIEYIbNXGDJae:4 customGoal:AEAFSXZWDRMeVRXJeaILYJO:4 AEAFPDGYWEYcZbdBRXZXe:4 ">
-												<i class="mybooking-block__ico mybooking-block__ico--change-dates"></i>
-												<span class="mybooking-block__link__copy">更改日期</span>
-											</a>
-											<a class="mybooking-block__item cf custom_track"
-												data-trackname="MyBooking widget in booking summary"
-												data-et-click=" customGoal:AEAFSXPHAEDXCGHfUOfEIEYIbNXGDJae:4 customGoal:AEAFSXZWDRMeVRXJeaILYJO:4 customGoal:bLdLOLOLOdQeRHfCeYQCFeBAEXcBdHDMQPYO:2 customGoal:AEAFPIPDGYWHJXdDRALXMHO:2 customGoal:AEAFPDGYWEYcZbdBRXZXe:5 ">
-												<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-													stroke-width="1.5" height="16" width="16">
-													<path
-														d="M12,5.251C7.969,5.183,3.8,8,1.179,10.885a1.663,1.663,0,0,0,0,2.226C3.743,15.935,7.9,18.817,12,18.748c4.1.069,8.258-2.813,10.824-5.637a1.663,1.663,0,0,0,0-2.226C20.2,8,16.031,5.183,12,5.251Z"
-														fill="#262626" stroke="#000000" stroke-linecap="round"
-														stroke-linejoin="round"></path>
-													<path
-														d="M15.75,12A3.75,3.75,0,1,1,12,8.249,3.749,3.749,0,0,1,15.75,12Z"
-														fill="#fff" stroke="#000000" stroke-linecap="round"
-														stroke-linejoin="round"></path>
-												</svg>
-												<span class="mybooking-block__item__copy">
-													查看订单
-												</span>
-											</a>
+											
+											
 											<div class="mybooking-block__hint">
-												温馨提示：你可以随时修改该订单
+												祝您旅途愉快！
 											</div>
 										</div>
 									</div>
@@ -1350,67 +1315,7 @@
 					</div>
 					<% } %>
 					
-					<div id="b_confirmation_body" class="screen main_column conf_align ">
-						<div class="mybooking-block-sticky mybooking-block-sticky--sidebar myres-sticky js-mb-sticky">
-							<div data-et-view=" customGoal:AEAFSXZWDRMeVRXJeaILYJO:3 ">
-								<div data-capla-component="b-post-booking-web-mfe/SelfServiceDesktop"
-									data-capla-namespace="b-post-booking-web-mfeOTWYcffd">
-									<div class="c6fa81a947">
-										<div class="b318847947">
-											<div class="ac78a73c96 a29f4f5c93">预订信息都准确吗？</div>
-											<div class="d8eab2cf7f e3e796884e">您随时可以在线查看或更改预订，无需注册!</div>
-											<div class="bc7e7befc9">
-												<div class="c469ed42cb"><button type="button"
-														class="fc63351294 a168c6f285 fe673a990a a25b1d9e47 f45f1f39d8"><span
-															class="b6dc9a9e69 b46b015725 e25355d3ee"
-															aria-hidden="true"><i
-																class="e9a4647ed6 f884cd7286"></i></span><span>
-															<div class="f9afbb0024 cf9a0fa298">取消您的预订</div>
-														</span></button></div>
-												<div class="c469ed42cb"><button type="button"
-														class="fc63351294 a168c6f285 fe673a990a a25b1d9e47 f45f1f39d8"><span
-															class="b6dc9a9e69 b46b015725 e25355d3ee"
-															aria-hidden="true"><i
-																class="e9a4647ed6 f5acc92859"></i></span><span>
-															<div class="f9afbb0024 cf9a0fa298">联系住宿</div>
-														</span></button></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="mybooking-block_ss_legacy_part">
-									<a class="mybooking-block__link cf custom_track"
-										data-trackname="pb_conf_replace_mybooking_widget: Change booking dates"
-										href="/myreservations.zh-cn.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AsOl8aIGwAIB0gIkNTBiNTgwNTUtOTZlYi00ZTY0LWE0ZmQtZDFlYTNlZTVmMzZm2AIE4AIB&amp;sid=f0f82b20b46106bf73b9641ed765ee02&amp;auth_key=jASQF2C6wwXq4Dcq&amp;srpvid=7853152978100034&amp;;label=from_conf_1;pbsource=email_changeDates"
-										data-et-click=" customGoal:AEAFSXPHAEDXCGHfUOfEIEYIbNXGDJae:4 customGoal:AEAFSXZWDRMeVRXJeaILYJO:4 AEAFPDGYWEYcZbdBRXZXe:4 ">
-										<i class="mybooking-block__ico mybooking-block__ico--change-dates"></i>
-										<span class="mybooking-block__link__copy">更改日期</span>
-									</a>
-									<a class="mybooking-block__item cf custom_track"
-										href="/myreservations.zh-cn.html?aid=397645&amp;label=bin859jc-1DCAEoggI46AdIK1gDaDGIAQGYASu4ARfIAQzYAQPoAQH4AQKIAgGoAgO4AsOl8aIGwAIB0gIkNTBiNTgwNTUtOTZlYi00ZTY0LWE0ZmQtZDFlYTNlZTVmMzZm2AIE4AIB&amp;sid=f0f82b20b46106bf73b9641ed765ee02&amp;auth_key=jASQF2C6wwXq4Dcq&amp;srpvid=7853152978100034&amp;;label=from_conf_1"
-										data-trackname="MyBooking widget in booking summary"
-										data-et-click=" customGoal:AEAFSXPHAEDXCGHfUOfEIEYIbNXGDJae:4 customGoal:AEAFSXZWDRMeVRXJeaILYJO:4 customGoal:bLdLOLOLOdQeRHfCeYQCFeBAEXcBdHDMQPYO:2 customGoal:AEAFPIPDGYWHJXdDRALXMHO:2 customGoal:AEAFPDGYWEYcZbdBRXZXe:5 ">
-										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"
-											height="16" width="16">
-											<path
-												d="M12,5.251C7.969,5.183,3.8,8,1.179,10.885a1.663,1.663,0,0,0,0,2.226C3.743,15.935,7.9,18.817,12,18.748c4.1.069,8.258-2.813,10.824-5.637a1.663,1.663,0,0,0,0-2.226C20.2,8,16.031,5.183,12,5.251Z"
-												fill="#262626" stroke="#000000" stroke-linecap="round"
-												stroke-linejoin="round"></path>
-											<path d="M15.75,12A3.75,3.75,0,1,1,12,8.249,3.749,3.749,0,0,1,15.75,12Z"
-												fill="#fff" stroke="#000000" stroke-linecap="round"
-												stroke-linejoin="round"></path>
-										</svg>
-										<span class="mybooking-block__item__copy">
-											查看订单
-										</span>
-									</a>
-									
-								</div>
-							</div>
-						</div>
-						
-							
-						</div>
+					<div id="b_confirmation_body" class="screen main_column conf_align "></div>
 						<div data-et-view="AdREFHZUfFfFcYRQKe:1 AdREFHZUfFfFcYRQKe:4"></div>
 						
 						<div id="good_trip_signature" class="hide_for_print">

@@ -7,6 +7,7 @@ import SE.pojo.Info;
 import SE.pojo.Record;
 import SE.pojo.RecordDetail;
 import SE.pojo.Room;
+import SE.util.StringTools;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -27,8 +28,10 @@ public class CheckRecordsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("=================================CheckRecordsServlet.begin=========================================");
+        StringTools.setHashMap();
 
         String phone = request.getParameter("phone");
+        phone = "%" + phone + "%";
 
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
